@@ -1,0 +1,19 @@
+//MO000-001.TXT ANA00000 TO ANA00001
+tb_aliment		NFI		nouveau fichier
+tb_categorie		NFI		nouveau fichier
+tb_commande		NFI		nouveau fichier
+tb_composer		NFI		nouveau fichier
+tb_contenir		NFI		nouveau fichier
+tb_localite		NFI		nouveau fichier
+tb_pays		NFI		nouveau fichier
+tb_plat		NFI		nouveau fichier
+tb_utilisateur		NFI		nouveau fichier
+fk_alim_pays		NWL	tb_pays (id_pays) et tb_aliment (fk_alim_pays)	Nouvelle liaison entre les fichiers tb_pays (id_pays) et tb_aliment (fk_alim_pays)
+fk_util_com		NWL	tb_utilisateur (id_util) et tb_commande (fk_util_com)	Nouvelle liaison entre les fichiers tb_utilisateur (id_util) et tb_commande (fk_util_com)
+fk_comp_alim		NWL	tb_aliment (id_alim) et tb_composer (fk_comp_alim)	Nouvelle liaison entre les fichiers tb_aliment (id_alim) et tb_composer (fk_comp_alim)
+fk_comp_plat		NWL	tb_plat (id_plat) et tb_composer (fk_comp_plat)	Nouvelle liaison entre les fichiers tb_plat (id_plat) et tb_composer (fk_comp_plat)
+fk_cont_com		NWL	tb_commande (id_com) et tb_contenir (fk_cont_com)	Nouvelle liaison entre les fichiers tb_commande (id_com) et tb_contenir (fk_cont_com)
+fk_cont_plat		NWL	tb_plat (id_plat) et tb_contenir (fk_cont_plat)	Nouvelle liaison entre les fichiers tb_plat (id_plat) et tb_contenir (fk_cont_plat)
+fk_plat_cat		NWL	tb_categorie (id_cat) et tb_plat (fk_plat_cat)	Nouvelle liaison entre les fichiers tb_categorie (id_cat) et tb_plat (fk_plat_cat)
+fk_util_loc		NWL	tb_localite (id_loc) et tb_utilisateur (fk_util_loc)	Nouvelle liaison entre les fichiers tb_localite (id_loc) et tb_utilisateur (fk_util_loc)
+PastaDrive		CNX+		
