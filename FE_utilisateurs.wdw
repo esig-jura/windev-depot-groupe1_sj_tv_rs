@@ -177,6 +177,15 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         IF YesNo(No,"Voulez-vous supprimer cet utilisateur ?") THEN
+         	HDelete(tb_utilisateur)
+         	tb_utilisateur.BrowsedFile = "Utilisateur"
+         ELSE
+         	Info("Suppression abandonnée")	
+         END
+        type : 18
+      -
         type : 161
         enabled : false
   -

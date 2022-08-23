@@ -31,7 +31,7 @@ window :
        internal_properties : BQAAAAUAAAAPAiABTzqYyCX967qXugBOJnKYVoHihBx5q0v1+PQ8QaFLYma22bekwltyBfm0uaH6geJgTP0qKKlDtshJFlFTPJjFaIZ4/9yG51PQU9ew5+UnYZNXiWuKwYe6NAVwHduf82ciUSvmEXK0YooregtPOWHlNq5z7b2lRcceu0a43CZsu8VdJ9zHv+IefvRuGXTY1mpmBD4hSeOSXnWT
        type : 2
        content :
-        internal_properties : BQAAAAUAAADoEyQE4FKefoolAu6hbpm4slM+WGqC+FVdwxXSDHA1Bx1yVcD8l399kuu3AmoSWWCzhfZKRdh4F3iIMTjmZWqp/4F6I5RMQq6cGlBXnK+XswxR9qQLTMxpgM5UxJbvC5kwVMfIUqcBrKzl31yE2+AQ9rteNPxG2vWo/Hj76EnUs3TPUaC8L82T15mBgzTd4CZfwp643O4xmM6SmS0QgW9xwMF4gkdYngBLZSB0gAgkCH9jaI7DmbtnXiParqOev5uffnNtc7BOdaI40km93FM/vuFn5/kcnIgy+DLJWh7Zx9fDe2rUfJOvOhGLdz0eJv2RyP7+K2mfQyLp1g1cCfT0d3hU+HKjdLgfX+VYmYGF+4MptrrvQvls0pgdAe8OLMGTo3vuh8rVzp90kYumruTynhLbtwxlXkiPUmfNLvkssZHAp4dnflDbQGTmcWXlhOe2oTScygjCgXZ92SFKzzCERpwdvZbC0Ro3E5nGUMPBOE9FFMmSHADjbvRM6UV/acWgYE2hvdz0GF/Icv30GYe0UtcIjUTbl0BTmusdoVr18on5eTuK6mmQxuN/N4hw7fVnu5c3ymgFRcYkTaMeeVBtEfgLCawNKmM2W8q2fF9Ou272O2uOd6Slk5RBudsnR7o41HhQkPkLopVC9eXzoOvVYo1H/aCdUznbDwchkYakioe57r5fJNxJ7fQ/6tvri8cWlix7dh3R5VKLW/Tc2YEAIQqCAR5ZZA9t+UjBwlTvSXosn3vP
+        internal_properties : BQAAAAUAAADeu+XCpYshE8E0FHSsXktdria6A//2Z5RyO2X5MzOMHDXYuObiQ/lqqRn/WgXlidOEzPUmARFcggwxDocKJ1N3AUZlvY8buu3Egoi9D4FE+7xkvklRUVXgqvZFlAKkALMyK62VkpJnXLPc4tda4PDxEgzeDiwKfTO0FfUcjYWEmMAaZi7wYgdOSrp3ZiWhZn9wl4f8htg/i6EkpgcraN83orFWdWH9HmOkqvmx40/LXPzspXaTD22qnuu+110Z8BvqUL1gt6SK89Awv3pf5JIzkKFhWiV3qz4G9cwNB3ds54g5rtDGVrzpQeDdqm2RpgReUg6oT3yotAoXbe70hY+/wc7YcOYRJbcdyMhV9Ja8e2MMIiApXxGkMrr/vfYXW6H8MUlneGRvdgFRXSzQT0dDdN5IjS1ovuZC6PQaVLDdNsbFbWBNc4FqYAzQCUMEO8cETlVoCqtjmWba7k7S1d7CguIgj3e0mjhjfZMJGE07snKllbcUshzyU3GAi7q23bI8+YPfeUzYz8kpkS4KJjK5zTmUSip3CCTdR+mo2zPWUZhsvDHyIT90cQkg3MZC59NvhiMY+uz2oeyukAqB5tGB7rrA7S5Ql7/UX4pQy9fJIuDBql83UmRL44U7eXR8qZanRKzD8DRoj+YYRhdQz0JZYUKJ0HFstNOM7e2Opn3lW0oVp4dnOgHQdfrQ1oj4LobwqY4GX0kDmXMYB3QxMuOBGlCl/4i26XcqKPbOPtlENj3xPQ==
         type : 2
        code_elements :
         internal_properties : BQAAAAUAAAB0514HrFnu6nzDTEHDIRjaIbXM50Umg6epRMMthNiIcByFuJHiustONbVn3fEJqggZ5Eb10fhWuaClkCfWLanmkHj2
@@ -43,7 +43,7 @@ window :
        internal_properties : BQAAAAUAAAAHChgZd9KwMGkte3oHioCervrQzunaFIyxi+eLMTgkE7XBtqRqGm7gWo3kq+2dFNItkUUc1GdpcnAAgvumjBPrqWOLPyo8lFikycpem8N9JJSQNY2TwT7puoFoVXvo1W9uIW/RbSgm0ZYwW13/Q0MIRKr6qyVi3ybigJJ/Fl0jt8DEb3GZi0CrU07iGnjKxaDsglaC3GZJcduaVn2b
        type : 2
        content :
-        internal_properties : BQAAAAUAAAASFZIWUvwACGRXHMTrpFPCrGVEKlz0Aje/bSjNasKLXTNcw+7CcbVPcP29RNgE3/ZZdEIX8RL+lDLdedLbFqDD/0Ua9gyP0mCEcuDvrC8nCwRJhpyLjAS5cM5MhE4HExngBH+4Sq8BlOTN76TEC6BIXnOuvDyWMuVojGBrQJEso+S/uVBkp82LHxHx6wSdUB43Wk6wTF5p+J7y4c1YGQchUFEg0m8QLigTXaCc8NiUoGfLSKbTqZPn3rNizguGt4ufbivNm9geLSoQ8mFdvFM3NllHbxlM5FhiaGpZIlZhh3ej89ps5CN3knnLv00uJvX5UA5mq4mHY+JZbq0UUexEV5hsuCo79BBHJ6VgKbH1k/vhFiK/cqE8spgZ9YOiWF0/z8cqqw4RioMo/f/akjA+Gh6Xs1CZCvQzxvNBQt04TR1MMwMbglznFJii5anZQLOynYAIboy+/foxtSWuk+zQEujJGVomPZZ7F1U6JDeN9JsRUNWWEAzfEljIbekzNZHsLHntYXAAJFNsriHo7ePwfnPUuQg/c5wnTifxdV6xzsU11VdOzuUcWnf7uxy0GaGzlyNjzoyh4arY+XcSfVwprZTHxdDB5o9671YqwOPKN9riV5ciWwBxZwg9vT87Y1aksHSsZG0XvrnWMVnnhgVuZb0vUYRzFwpP6V0CogSQNFVa40LHsGA5nTRTFhunV7dWVgQPxumlzUoU7Ro6e2dqi/yMd5QjKlWno+JvsEb9W2yeCYG1
+        internal_properties : BQAAAAUAAACe+6UC5Uth04H01DTsHgsd7ub6w782J9SyewlRoztEDA3giIaS44naIdkHis0VmUv0LC2OaenEGizJfq8KX5vnyU7VLc+7um0swiDtJ/GkM3xkVvFpiX0ICq6VXNIc2NN6s531QhKXLNvs2pfiIIDpAlwWxrSytft0/ZWkLa2s+HgyFq5wwueuIgqvFg3xBrcwJ2/0PpCn4xG8tp9LcIdX2ul2FZF9znPM6nFhO5/LJFwc/U47VyXyXuMOTz2RWIui6C2Q50Q681igt8qXpFIbEMFJ0k3fI7aWXVz1t//0ZwCxflAG1ixp2TB1mqUh1nx+csbQh9QAbJrvLcbULTcfiVZYUOYBZacl6IDVTMYMk5Nc2liBFwnsMq77EQpT9zVI7f3TDIjD6l1FScC0e/N3MApcWcGc8uoejHAOePwZ+gLhAdyx1yXuLMAM/Ufw19vAOklkDq93nXJeesJWcVo2bp40O0vozvwvMd/N7Pn35m5x2TOoNlD2j6Ws7x5y+cbItYc7nXDME3X9zdLuQh4tiTVoZo7LbHhZu1UMf38ShWT44N22FXP4vT3cUDruY1ebotc03tCKNUhCzN5VMi3lCkYUOUJEu3OAs7aUz9Mlhkyt/us7Vlg/7+nn7VgoBeoz0IAfpEi8I7IsUns0G46t/f79bEVQWMdoYWlCWtkhjzahy8Or/sUEgX58qhzE2rqspcLy8/33HTNYx7Rx8qPB2pBlv8h2qbdq6DaO/hmE9n2xfQ==
         type : 2
        code_elements :
         internal_properties : BQAAAAUAAAAKEWAZnlPw5EYJZld1u8KEx6/mib/IJXkD4l2TDlJIuHIBxo9wNEHEvw/Bu5dzwCIz/mjT95Lsz4rfWh3MJ7fwmgII
@@ -106,6 +106,15 @@ window :
     code_elements :
      type_code : 4
      p_codes :
+      -
+        code : |1+
+         IF YesNo(No,"Voulez-vous supprimer cette localité ?") THEN
+         	HDelete(tb_localite)
+         	tb_localite.BrowsedFile = "Localité"
+         ELSE
+         	Info("Suppression abandonnée")	
+         END
+        type : 18
       -
         type : 161
         enabled : false
