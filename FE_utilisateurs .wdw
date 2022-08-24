@@ -10,7 +10,7 @@ info :
 window :
  name : FE_utilisateurs
  identifier : 0x230331cb03e6c3f6
- internal_properties : BQAAAAUAAACdd/KAmlJ132MLyPhyeRermDllLCJa0a0iqJ2bqSTnFR3/R8qqTc3eETrjsMGTxwxoSxGnRIhnBXNCdBMi1i/JUmYWyHU31h3q3VQS0pr4uaGkynTtiB7OFOKW715NTtrN0jtZHJTC5LjMnUJtcOeKKGs4gv2g5Brz6qcslyQbpf5nSqYrDtcaaU3ikVW/eZC9vAu1qG9f2evBW3hS8Wnxaoo4dvp9BCuSUM6NxH+6xH96mHlQcLHv3ZZ1oDxe23FdO1eBdRd1IkvwtE8YQO0tWgXs3kS/RlsbSS7aFl5kGQwGQ71/y6ZQqLXlR1urpP35KJOnVtT0JsPZI50WlbNzmVsIVnJ2CJ8yzNRSVvhASuRs6bMHOaF7CriQp19uZw7yInHMzE3ZqOl4xXldL+P2JJ3fVNyhHwh7mYRl/1L18DnWvlCCmKDjWZVFtR92TZSOFhrN/CUK/Qbv/qhv9CM5TrPuan7huzQ6bG4WtPaHhsCWB7B8UR+nbJJSEBN8Ex50l4nxVzh0xmsa/xfqu4GKmiRf90GKntQV7octk2RtZI/d0cCwZ/rAViYyDCiLFM2Y8rmkHP75YP0Umf/c5ZB4ZMary6b5IxiX8870Vr4VCLE/POm+v4X9EGlO0i1plKEBCCFfV0bekCZ9ZELm
+ internal_properties : BQAAAAUAAACg6j/PxZA1H6NBggSmrWc1OA8l+spseQEWQrvjweRHYwHZw6yaO12GNQxLmql3v05M7aGVrNZ/LXdkVDfG+rNn4kie8inF/q02E1ou3urQdzG+3jpp8gqaANgI04ppClR9LO8f1LLqPCi+41p9oOPEEH388F0Cfk5zeB1YK8TjY17lksyTOEMmueMwvdk3ARYdWl8nAAnH/VNvoQSOoTm/fhTceJr7uCdmSoRF1A/GVovUsBcoLkFjHeRDWHQKdzsBPTfntZUVCq/qTovUoMWLNvegGBBFksN7h8AuAr4UW9CoA2OTWfJwSBtzn/NTwKcJ9lvlHnqbrUrSJIhvCkT8ACJ7wRuP72LhoXHFx3VNZ5sbBJIMxvQ69VXlNuw3nMt5+XTPlaYoV7iJtgjCqOj7KwRat306bleaejXkXBMqpXQ51SPb2e8m7GZ+YLjD/sVBQd2QPd6B+A38M6MoSWTqwc7R3R/K6gv9uTN9AYf0a2ctttdBtjzESYlRaa6TevVtOOqepq8tg9S9UpShVmyFl3lE8CQN2/1iuYI6+q+YF8A+9qXXXjv1m/1Zmff+m1RZ83zvzU9IpyTNsjbZPjm555OOjh+CcmcmQLPLU796/YQaY9zXWBwQZzKPncbGwU6ss1iqGIcdT+G4L78b
  controls :
   -
     name : tb_utilisateur
@@ -95,7 +95,7 @@ window :
        internal_properties : BQAAAAUAAABvPaGO7SNOE049A6czPG4zs02HD0Qm0HFtkJ9gGWrlGsVIP0nz7J+OLWaUhOtgLbng/2D8tfW+21G2bQHz+cfKhGjXXDZTnnV32rC/ZmJiDwdRRsWcYiSviDIZht9lLMRcbc5hU8NNR0Kw0CLzPqtT9hopmX6wTLg/iW1d9KoFZCfBsFrqo1u1un9u8+HKU/s8uTBKtcff7zvWMKup9WBR2tqQgalQ5cW/
        type : 5
        content :
-        internal_properties : BQAAAAUAAACNP/J7Xo4aPrIbA9tbXWqLvRnFP+xK1mpbOFgshYPFI/ZPrrqQSd4iLCshJ0BOpEv+sRqLN2Cgn18PhQLkZG+ZMMhWdbBCprcoVN0CnHeScrDAkEHGZNmz9Wr38sYej5zEQN1csXZsd3GY37nsupupIQl81DgOb0EyemdD0ER0t7Z3qkI3AoRrbG+ZmqBTidJNUEvuB8soAT79w/zTC8Z243vOek9WD4d1dc9a0RNQqhx0iIPPwNaDfNKKsawmKJy1Ta9wDmTG3WyH1GZF8iMTO8bfyxGZB1MbI/f4gEq0Ny/GQM90PYkGHUeko/XY72mXt7YNxUGumFifvJLJ80pLjw0KF7uWrfGGwc0MNLGV//AA7yxHKlGEnFhlMKWbizvwQt5kgNVpmI9lM8qwPh8Fva8eCDq9g5vN7O/Coa2nQoAdp5Z6LAwbvVo9uhzhYC18WvrZJR25sCmc9F1iRzpV9ndM5Klyyjt2t55msvPeJPRoH+yGwBWO8vxOhc739mutcZO2p2oRjN+SFz3Fp+ADjqUIGt4Y59+oQR+dV08CmIE4iFzONeUYnFfwOoT+P6ctpEqc23abihEffNbWX9eCIbbh/go=
+        internal_properties : BQAAAAUAAABAvVBDqHNNA0L6hh6qCQTNTfr/OPApEJLu3JFWlZIx9MEvEe8cEUs92M+GRQ7iy062E7s8dreoKJCmDxjuqroVQPIvqBJpgMo13m02dZ7mdDebKepWfZr0zZoUCjbFdFhWGdxTTdKCDrKTIU4NqrQfjcCSPOYQ6uW193Y5g9AmvC21sULe6nvJbgjIdTIPV1FpWZamAkl0sIELjSRhu680mCBz1t3MCP0bm9jPeIRLAFvU1joIqL7Hy4UtDuGBUIsmDjBmK5+4YIWZknk94XxLe34wOdphXAKj2WaS3WrS/uL7RXz14OXaHv6JptEX2MlKTb0sffO9fFGA8vRvqoN53uL1at9MQxBV0fSfSFFn0VS+ZypqpW/N2yOFqXbOp36266zWpC/45AR9UFoK9KtIibQrzQAwQ2DO1a/FgFm4F4wFILkWpAciHUzCbT2xxLm5NsgAKzbbFQksxUR0GjmZDlio7BZW0D9PjxMjU2GRujv6JLMal1O/oVlFeblMWciHcpjR1LIBbfj323Fd2H6WEwNNuNsjpG8IOArFXpYnhlqlxuy093vAGDMLR6EpBupcgNgO5aqG06T32QXN4lEWH44LdtW4jww+U6Qyoftu0mw9fT/B5kFEK2HGkpLZpYr18ffmdejJWxFQDw+rwlubTZNUKgKvwnR8zP1wsa5uhAONtiJtnmz4TpHtIBXjMgbSp38FPQmJhHH4xL+p9O7T6bAJKRnzxuo/NaOt8+EpncQtIKMxhjmiRhJWANXVQTgLai0rJhwnHl0NdNc7rjfE
         options :
          -
            internal_properties : BQAAAAUAAABQM1l8wAxO9QC8YHDkmd8RwcuRrUw9ScR6LT0ZrGvBMlV/2/U+oeFkFxfK6rdceajSXhUoTUyL
@@ -180,10 +180,11 @@ window :
         code : |1+
          IF YesNo(No,"Voulez-vous supprimer cet utilisateur ?") THEN
          	HDelete(tb_utilisateur)
-         	tb_utilisateur.BrowsedFile = "Utilisateur"
+         	TableDisplay(tb_utilisateur)
          ELSE
          	Info("Suppression abandonnée")	
          END
+         
         type : 18
       -
         type : 161
@@ -213,6 +214,11 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         iDestination(iVisualisateur)
+         iImprimeEtat(Etat12)
+        type : 18
+      -
         type : 161
         enabled : false
   -
@@ -223,6 +229,21 @@ window :
     code_elements :
      type_code : 4
      p_codes :
+      -
+        code : |1+
+         sFichier is string
+         sFichier = fSelect("C:\Répertoires", "Fichier.csv",...
+         "Choisir un Emplacement pour le fichier a exporter",...
+         "Fichiers Texte (*.csv)" + TAB + "*.csv" + CR + "Tous" + TAB + "*.*", "csv", fselCreate)
+         // vérifier si un fichier a bien été indiqué
+         IF sFichier = "" THEN  // le bouton <annuler> a été cliqué
+         	Error("Vous n'avez rien indiqué.", "Recommencez !")	
+         ELSE
+         	Procédure_export(sFichier)
+         END	
+         
+         
+        type : 18
       -
         type : 161
         enabled : false
@@ -245,6 +266,63 @@ window :
    -
      type : 230
      enabled : false
+  procedures :
+   -
+     name : Procédure_export
+     procedure_id : 1370393162142148447
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      // Procédure_export ()
+      //
+      // Paramètres :
+      //	Aucun
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      PROCÉDURE Procédure_export(pfichier)
+      nFichierID				is int			// identifiant du fichier créé
+      LigneAecrire			is string
+      
+      
+      
+      nFichierID = fOpen(pfichier, foCreate)
+      IF nFichierID = -1 THEN
+      	Error("Problème de création du fichier.")
+      	ReturnToCapture()
+      ELSE
+      	FOR EACH ROW IN tb_utilisateur
+      		
+      		LigneAecrire = Complète(tb_utilisateur.COL_nom_util,15)+...
+      		Complète(tb_utilisateur.COL_pre_util,15)+...
+      		Complète(tb_utilisateur.COL_email_util,45)+...
+      		Complète(tb_utilisateur.COL_adr_util,35)+...
+      		Complète(tb_utilisateur.COL_npa_util,10)+...
+      		Complète(tb_utilisateur.COL_loc_util,20)+...
+      		Complète(tb_utilisateur.COL_adm_util,5)
+      		
+      		fWriteLine(nFichierID, LigneAecrire)
+      	END
+      	
+      	Info("données exporté avec succès")
+      	// je crée qui une condition qui demande à l'utilisateur si il souhaite ouvrir le fichier exporter
+      	IF YesNo(Yes,"Vous voulez ouvrir le fichier exporter ?") THEN
+      		ShellExecute(pfichier)
+      	END
+      	
+      END    
+      
+      	
+      	
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
  code_parameters :
   internal_properties : BQAAAAUAAAAwjDLmDSZ0H1P68nJIeNfqR9EvRjU/K+sVcM1T6rhVNr+VTV1mZ/rmoweYbFDZUhBGcv8UsxlDxVCOnb2U/SQOvlGWzNby3/w/V+ppSymxv+Vh
   original_name : Modele1
