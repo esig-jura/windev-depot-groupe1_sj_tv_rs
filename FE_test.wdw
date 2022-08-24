@@ -9,20 +9,9 @@ info :
  subtype : 0
 window :
  name : FE_test
- identifier : 0x22ff956004b54046
- internal_properties : BQAAAAUAAAArf0/FDA+zNxrgSB/zuIaF/bHesLySn188egk1G1VgRACmvnYJazLv5X/ayDwTho+d+MPcBkTwz7aNC9Ji4RCwMuKwFOcZxYmXVNwi66xjM54GMeunwPVinx9Cn91TLHJkhLDymRni3C2JsyfUrAfwVZneG505xKT7SD+hg26OgygiBfw+M5ufGs9bDnXmYiwOjMorbqdlrc4CXi+7J8xNldkW6DctoHC/nDvE/nJWGNMIGLkifFcHzGjFETuaVT76a266NF0K/iNoOdPSXzdf1GrwSFq4cQ5nBHt0cuxiPzI6hcMATnt0QWQ61pruUA8vDLQjxMvVOOJhRXYl26bDTb3PO52a77XB+qRbtzzBtEKwwJQory4ZufAqsmjA5CICuFKXHYPAQJrqGfI+FbZocvHweZlxDgYwn+DABHIWbpPWoTXvpIV77HdJXOjoEgLI1tdiQw//xYNrXHv8TJrFJln1ky+DzBgDJloh0fKyBDrqNC0FvyKZR9Z8f/ebI1VjlPBZs6I49kbPCV+VTf98FmgnIgDQzB3JKIab7mhzIQzILWCPwVzmlnjxb7efw68fxUU8kf43Tqar4CxWjjUJV2IwR4WRP3XmH4Eqc2UgfsDBZxR2/m/3RFLt6g==
- controls :
-  -
-    name : Bouton1
-    identifier : 0x22ff979600f05124
-    internal_properties : BQAAAAUAAABgp/+X+1z/ot55dbA6g1E5gtZWB6bWx45v3IBzpqq4JEg/ywlzA+4AQHZ9iV/BeGlX3k4n4c3iytXL15/otgMLAzztTVwSuspzM1YWtFDcl68wLSAxvkcM1G2Mgmgs2lOaLW8apVmO+aTifo7mPyJRFgJdLkax1FKKqUhv2KJVDJyaDS2ZyC+8e5WDHdJq5uCkFq0BuiNoWW/MIa1a7EvipU1et/3Z6Mx7Lw2NARFX7kdfVdhtSFX891srK7kU5Jm070exloVBJXV3joVKcrtqUKbFHfOxI3GPRiFbqQGxB3JeobZYyI+mIAeRUhYNGaklbtoRpeBQ+AK1Hg+ztwurjOXg96gueI/KuuaDcqgOZK+SeRnnQs6sCN5pthR+zbgeY1zdD89QnRKFavgQu2Kqu79GJoIUaO9IdIzfczC4PwW1fM6ENyhvaWq7XDwuHTM8JzGPpdHD6YH0xdvrFh9f1bLovAWuyYQQB8FS44OUOfxzS/jT0jZDmiEleQQxScE8k9ZXnDjS3KwZWXjBVZ3ItRpSHDLxhGFVvCC7MKYA7YyJPPJeLDal49B2A9OQbCZWuN/kYTkn5vZtnoC6HLoVMiEz0JxiCNjZikUJupIfoYpmHcF0zPPclzlLWPsX4qvqBgJoPupDte/kO66RHx8e90y8iF5UPji4vx9gXemxwG4z0JRxtka8ztvGF5fLIEMoYVEhu+8xcFUXER9lPGw4eeAT+4zHUeA=
-    type : 4
-    code_elements :
-     type_code : 4
-     p_codes :
-      -
-        type : 161
-        enabled : false
+ identifier : 0x23062915010ffac0
+ internal_properties : BQAAAAUAAADdEV0XWnlNUXzOWondUtAXbwPskgJEMXkOSHv/Df/SJiLANNBX1Vx5d42surP0Fdg2rANcVgTgV07Fc+oykVCIomrIDB+hvTlHVGzC88TLM6YmgStXkAUaxydaN52D7DokjEgakbHqTE0JU3dMdK8gXVnOS305dDzToHeZg/6O+zgK/TQWKxM/eg+rfs3+emzGfArb/re15bZqhtd7l+y19cH+AL+lmHAv7JsEVio+6OtIqMkyvPffJPitiRs6RSZqk3bC3KUC7iN4CSOqx7+PbJogOEqogVYvPAO8MiyS5/IiHRvo1gPUEQTKhhJGJFsbeIA/EL9xZMZNiQqx36o/Wdn7F5meu/G15pivw4AVAB6czJAksyoljQzOJoTUOP5uJO4DuSfMTG423Rba6Wrkjr2sJeV1auLECxT0sCbaqr+S7UHbqCGnwFNdMOSc1o70guNeb9NbkVcHMG8osC6hQjVxH+uXaKSXog4V7SaGIPYWwKlRIx6FS/LQkyPPB/FPMJwVzxaEQur7LWOR8VPIctRzvnyUmLmtdCofypxXTTg0GQzb9egiqiQdGb+X2UFxV9eqJ2CVLEA1ekq0IJvzoTQCdWvrlcsI8dOY4Rf2UDKzUTpc0D3FFmT/mA==
+ controls : []
  menu :
   name : _Menu
   identifier : 0x292573e513b5f221
@@ -47,7 +36,7 @@ window :
   original_name : Modele1
 resources :
  string_res :
-  identifier : 0x12ff955c00243087
+  identifier : 0x1306290e0008de8d
   internal_properties : BQAAAAUAAAAa2Zm8J9E/zh+/WIrVvz1fER/So3PB0gjQuxc1xKQVWY4ZDm5lfg==
 custom_note :
  internal_properties : BQAAAAUAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
