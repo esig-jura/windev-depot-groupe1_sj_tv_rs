@@ -147,7 +147,7 @@ window :
         code : |1+
          IF YesNo(No,"Voulez-vous supprimer cet aliment ?") THEN
          	HDelete(tb_aliment)
-         	tb_aliment.BrowsedFile = "Aliment"
+         	TableDisplay(tb_aliment)
          ELSE
          	Info("Suppression abandonnée")	
          END

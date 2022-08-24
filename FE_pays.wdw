@@ -110,7 +110,7 @@ window :
         code : |1+
          IF YesNo(No,"Voulez-vous supprimer ce pays ?") THEN
          	HDelete(tb_pays)
-         	tb_pays.BrowsedFile = "pays"
+         	TableDisplay(tb_pays)
          ELSE
          	Info("Suppression abandonnée")	
          END

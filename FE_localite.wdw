@@ -110,7 +110,7 @@ window :
         code : |1+
          IF YesNo(No,"Voulez-vous supprimer cette localité ?") THEN
          	HDelete(tb_localite)
-         	tb_localite.BrowsedFile = "Localité"
+         	TableDisplay(tb_localite)
          ELSE
          	Info("Suppression abandonnée")	
          END
