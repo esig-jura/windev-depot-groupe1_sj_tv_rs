@@ -96,13 +96,6 @@ window :
      type_code : 4
      p_codes :
       -
-        code : |1+
-         HReset(tb_localite)
-         Open(FE_form_loc)
-         
-         TableDisplay(tb_localite,taCurrentRecord)
-        type : 18
-      -
         type : 161
         enabled : false
   -
@@ -134,13 +127,6 @@ window :
      type_code : 4
      p_codes :
       -
-        code : |1+
-         Open(FE_form_loc)
-         TableDisplay(tb_localite, taCurrentSelection)
-         
-         
-        type : 18
-      -
         type : 161
         enabled : false
   -
@@ -163,6 +149,19 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         sFichier is string
+         sFichier = fSelect("C:\Répertoires", "Fichier.csv",...
+         "Choisir un Emplacement pour le fichier a exporter",...
+         "Fichiers Texte (*.csv)" + TAB + "*.csv" + CR + "Tous" + TAB + "*.*", "csv", fselCreate)
+         // vérifier si un fichier a bien été indiqué
+         IF sFichier = "" THEN  // le bouton <annuler> a été cliqué
+         	Error("Vous n'avez rien indiqué.", "Recommencez !")	
+         ELSE
+         	Procédure_export(sFichier)
+         END	
+        type : 18
+      -
         type : 161
         enabled : false
  menu :
@@ -184,6 +183,57 @@ window :
    -
      type : 230
      enabled : false
+  procedures :
+   -
+     name : Procédure_export
+     procedure_id : 1370803657937148635
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //Procédure_export (<pFichier>)
+      //
+      // Paramètres :
+      // 	pFichier : <indiquez ici le rôle de pFichier>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      procédure Procédure_export(pFichier)
+      
+      nFichierID				is int			// identifiant du fichier créé
+      LigneAecrire			is string
+      
+      
+      
+      nFichierID = fOpen(pFichier, foCreate)
+      IF nFichierID = -1 THEN
+      	Error("Problème de création du fichier.")
+      	ReturnToCapture()
+      ELSE
+      	FOR EACH ROW IN tb_localite
+      		
+      		LigneAecrire = Complète(tb_localite.npa_loc,15)+...
+      		Complète(tb_localite.nom_loc,15)
+      		
+      		
+      		fWriteLine(nFichierID, LigneAecrire)
+      	END
+      	
+      	Info("données exporté avec succès")
+      	// je crée qui une condition qui demande à l'utilisateur si il souhaite ouvrir le fichier exporter
+      	IF YesNo(Yes,"Vous voulez ouvrir le fichier exporter ?") THEN
+      		ShellExecute(pFichier)
+      	END
+      	
+      END    
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
  code_parameters :
   internal_properties : BQAAAAUAAAAwjDLmDSZ0H1P68nJIeNfqR9EvRjU/K+sVcM1T6rhVNr+VTV1mZ/rmoweYbFDZUhBGcv8UsxlDxVCOnb2U/SQOvlGWzNby3/w/V+ppSymxv+Vh
   original_name : Modele1
