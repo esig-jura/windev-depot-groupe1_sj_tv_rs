@@ -49,6 +49,10 @@ window :
      type_code : 23
      p_codes :
       -
+        code : |1+
+         ListeAffiche(MoiMême)
+        type : 15
+      -
         type : 17
         enabled : false
   -
