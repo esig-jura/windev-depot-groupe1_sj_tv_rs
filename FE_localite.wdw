@@ -96,6 +96,13 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         HReset(tb_localite)
+         Open(FE_form_loc)
+         
+         TableDisplay(tb_localite,taCurrentRecord)
+        type : 18
+      -
         type : 161
         enabled : false
   -
@@ -126,6 +133,13 @@ window :
     code_elements :
      type_code : 4
      p_codes :
+      -
+        code : |1+
+         Open(FE_form_loc)
+         TableDisplay(tb_localite, taCurrentSelection)
+         
+         
+        type : 18
       -
         type : 161
         enabled : false
