@@ -98,37 +98,18 @@ footer img {
     max-width: 250px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
-
-
-
 @media only screen and (max-width: 1700px) {
     /* DIV du plat */
     .container {
         margin : 50px 150px 50px 150px;
+    }
+
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .titre h2 {
+        line-height: 25px;
     }
 }
 
@@ -137,6 +118,8 @@ footer img {
     .container {
         margin : 50px 50px 50px 50px;
     }
+
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -159,16 +142,30 @@ footer img {
     .container {
         flex-direction : row;
         flex-wrap: wrap;
-        justify-content : center;
+        justify-content : flex-start;
 
     }
 
-    .img-dec
+    .plat {
+        max-width: 350px;
+    }
+    body > div > div:nth-child(2) {
+        width: 50%;
+    }
 
     /* DIV prix, quantité et prix total */
     .prix-badge {
         margin-left: 0;
+        flex-direction : row;
+        width: 100%;
+        justify-content: space-between;
+    }
 
+    .quantite {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
     }
 
     /* DIV prix et prix total */
@@ -176,7 +173,65 @@ footer img {
         margin: 0;
     }
 
-    .container div {
+}
 
+@media only screen and (max-width: 870px) {
+    .plat {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .plat {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .titre {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body > div > div:nth-child(2) {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .titre > h2:nth-child(1) {
+        width: 100%;
+    }
+
+    img.badge:nth-child(2), img.badge:nth-child(3) {
+        margin : 20px 0 18px 0;
+    }
+
+    .container > div:nth-child(2) > h3:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .prix-badge {
+        flex-direction : column;
+    }
+
+    .prix-badge h3,.prix > p:nth-child(2) {
+        margin: 0;
+    }
+
+    .prix {
+        margin: 10px 0 20px 0;
+    }
+
+    .quantite label, .quantite input {
+        margin-bottom: 7px;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    .quantite {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
