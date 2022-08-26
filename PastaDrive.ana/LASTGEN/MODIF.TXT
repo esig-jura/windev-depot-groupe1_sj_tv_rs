@@ -1,21 +1,2 @@
-//MO001-002.TXT ANA00001 TO ANA00002
-tb_aliment		FCNX+	Connexion à 'ih1o2.myd.infomaniak.com'	
-tb_categorie		FCNX+	Connexion à 'ih1o2.myd.infomaniak.com'	
-tb_commande		FCNX+	Connexion à 'ih1o2.myd.infomaniak.com'	
-tb_composer		FCNX+	Connexion à 'ih1o2.myd.infomaniak.com'	
-tb_contenir		FCNX+	Connexion à 'ih1o2.myd.infomaniak.com'	
-tb_localite		FCNX+	Connexion à 'ih1o2.myd.infomaniak.com'	
-tb_pays		FCNX+	Connexion à 'ih1o2.myd.infomaniak.com'	
-tb_plat		FCNX+	Connexion à 'ih1o2.myd.infomaniak.com'	
-tb_utilisateur		FCNX+	Connexion à 'ih1o2.myd.infomaniak.com'	
-afficheAliment		NFI		nouveau fichier
-Connexion à 'ih1o2.myd.infomaniak.com'		CNX+		
-tb_aliment		FRN		
-tb_categorie		FRN		
-tb_commande		FRN		
-tb_composer		FRN		
-tb_contenir		FRN		
-tb_localite		FRN		
-tb_pays		FRN		
-tb_plat		FRN		
-tb_utilisateur		FRN		
+//MO002-003.TXT ANA00002 TO ANA00003
+tb_localite	ct_un_npa_nom_loc	RUB+		ct_un_npa_nom_loc est une nouvelle clé

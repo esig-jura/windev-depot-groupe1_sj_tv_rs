@@ -73,10 +73,39 @@ window :
      p_codes :
       -
         code : |1+
-         ScreenToFile(FE_form_plat, tb_plat)
-         HSave(tb_plat)
-         Close()
+         i est un entier
          
+         HLitRecherche(tb_plat,id_plat,CS_plat)
+         SI HTrouve ALORS // l'enregistrement existait dans le fichier, on va le supprimer
+         	HLitRecherche(tb_composer, fk_comp_plat, CS_plat)
+         	TANTQUE HTrouve ET PAS HEnDehors
+         		HSupprime(tb_composer)
+         		HLitSuivant(tb_composer)
+         	FIN
+         	HSupprime(tb_plat)
+         FIN
+         // Maintenant inscrivons l'ensemble dans le fichier
+         tb_plat.nom_plat		= CS_plat
+         tb_plat.fk_plat_cat= CB_cat
+         tb_plat.desc_plat	= CS_descripton
+         tb_plat.prix_plat=CS_prix
+         HSave(tb_plat)
+         
+         
+         // Remplissons le fichier compose
+         POUR i=1 A TableOccurrence(tb_alim) // Pour i=1 aux max de la table mémoire
+         	Info(tb_alim.COL_alim[i])
+         	tb_composer.fk_comp_alim = tb_alim.COL_alim[i] // [i] indique l'indice de la ligne
+         	tb_composer.fk_comp_plat = tb_plat.id_plat
+         	
+         	// Si tous les aliments sont ajoutés, stopper la boucle
+         	si tb_alim.COL_alim[i] = "" alors
+         		break
+         	FIN
+         	
+         	Hsave(tb_composer)
+         FIN
+         Info("Modification c'est bien passé")
          
         type : 18
       -
@@ -124,9 +153,9 @@ window :
        internal_properties : BQAAAAUAAAAY02Df8aQRDR43ka4bCLhVvSEqzv+VFzDgAIo/06lZN1NNFxmY3HhFeQB7oldx6/5q2zKVSYhkSY3mrAz5nCUZBKD5LcwIK0kC8xRw+PueI8I1B7xqhYP+CLFkDc3m6ZSwr0ZN2ElSjy1wnqMCBAmc3f7Cwh84W5dHYjaDlhtUr4aRQnJlCPGL52yUJ8FoaThRh76E+YBROhA=
        type : 14
        content :
-        internal_properties : BQAAAAUAAAD1Nw3Gr0IFKIVW+NVmDm5JaMVo5OCt9dQ0p1UtOf/cHtf2OJ9g3m0QGpUjEWrIKyQm+dD9qxzAo5dfX93Gzxt0g9mGKMW7sZ1KgnOtvfBkgXQRamWgldG1MsPUzJ6K8blAklm7YlcieXvWQ/TRtLRW9LzXLgMqkMSalc5Ao2fBInuJdkAEKfVR6yKmkgCYcLuLNd3PM8v9LYAHGvuHrbN4CSyGelHAknprc57ZdXKcZtwrzY4WYwsYDVZPBTXdZZi+xFvWkpqaNGEY5kG9ocfH4XWYrkY0sQmvO08X4KIKVaTwrPodeDYxCwbvDQryP6Wtv1/nlX+Gmia3A3S6d4uaG+rx5YFsnasT30VT6vUVStFabNQABgIah1XbDTvRqLdHbwy2SuU/JslvCIeTTxC9r/Q7G9iUUuv2eKY3sRx+RKUykM6d8K3IwtFMu3c7anB09e1FKQ3LgTXkKyKR1MDNHR4avt2wNMNX69yDx1wZF4cKGEUYGNu2u+DEPRCWa+0WROlbyhHGmWsJLn/v67Zou4ALZpLArkyPdYP5pKumomEglEC4RFJszCl81kNok0q4cg4vjHaKPjqLMGekYJlYglXPqqWXp5HIIilatknUkcaPHQPqONLTH5E8hZuQvH7uj21t5Sya7QrTE0+MUO5EtDbQApKADOXGNfq0YOpd5jinua7xvs0HUtR0KqPQDv2Ye5UzN3xHe9Aht/4wCd1NTdLpR0y6T5AxyqOJU9FRp1N3E5aVc0PDHcNVSPdWSBK7Q92t3HgK/sy0ex8g+WTdeTZS2glj7Tv5vCdu3FckX1z9QFZOU7oExixEgci9yIhBZKZB3eYIfs8TIfbF0Bx3fS4cqLJH/ZKh0mxPdmGs1bP1d5ALKMe/lMu1pmEZ/ItwCh2Y40bQt3y/TZZ+gcrnUjElS+o71kIo3Prqix9rzUQS/TA66ti0/rifNu05teVTk5Z20OP5HlwQdgRSioz5krreynMTKoc2o9kcPtm6/x964huENSdJNAvb8D24V8a2LSmBNKq+HGDgVvUsFMUN36Z/k2qPzfPsddMsKLhNfggqHdjHbvLGl2JitaBHkRLDpr8+CWtClaxFMh1ovmWPPGmUH67tSyoDvBVmXrBhU2qwh87gVBMqUUHl3CRo5plCt/NvIooJW10k6V9uOIVfdbnfD+FwEam0CLqQaJznt976qOFrG19h7szJarKIA1n+wxz4E1d9pYn0a6alJYdmk2aEeXon5QN7gpfTwjdwklX6dg==
+        internal_properties : BQAAAAUAAAC3kfEh2v2KV15Wi9dbyyVRQ8VnmIHQbbaYAY4hBSJtjmJ2yBX0COcy/um7r/qghqaW8QmhDvt0H8tjptExklm+gyn2vel5Q1vZa8RsnXsQcoIlUqysJexblQgiav/0J14Xd3gDJPGImaBN/VDZlsoD3xdcnnnh7rylW4XptVtOxTvoQ8kt8nOKozE1xxnzV2my1TF1nl5RZHC3VIH520O6oXftTOdiIj37wofarWGMm9edQqVmEXEL7O0W506yYG3kKWbRhR1daNnyE4hs6KvrHug5lMiRnOQp9x/tFFlHKRUAg9urjPUoTFm27FsBY6abiN6xFvbikGKo+naRGkukoHcv1oZW+rIkS6i1vcZzauFl6Uzv1IjEvd+Vb7zcRD5lis6MXU2PaKEPxkhm3rAgY2CX8rpKpPs41WiJIcDmnGh7UBqRmZm6WqLepFwraKfildz2uXKJNlb2iDOsOJnN3iB5gHb/3zfdfWGV8mbKxaoFBRcKfse2NOQMyY317lFrTbDOY6oVxMMpJQfT2YRMk9kInpL4is71eOu6ASgIhSQiEuLV/uNYMFxqgQ/hy/Hzm9Eqqeyndu8GsqxxhWeYQ6pzb38UEr47IzL9Fy9DIcUWacZ1ziyiZvYokJY8FNhziaN9Xr3WtgpB4amvkzvjl1ABBxVb76qTrCPKzFu51WN65oNDgTFc2nWKWq3G14FLXzWTysIaqCqYWqPo6wIkaC88Hx+Sdxl6c8QNF4A2KlrKG5ik0FIeqKe4tY9/DXQmOvIpImexIDg/1/39nxPEyDzCkt1Ot1EXn7glVWZwxqX1yxBiC0LsY1c8Rtos6ZS3MTnwAI2/PxhjmK3iHZ96erfXSxvM2EwVNYXEr7Cs1ogCYZ3MwAV2ArzCQNeag+BBMobMP8xg4TqEfFPQz9Zu20PxHfULfXcuFqaTWKTs0JHULW3HMqgGly1w9SefxFA0q8qtey4OhSht0xPtSs7P69rCpllShidhnd6a7tY1dg519Q6JgV8V0pRVSmOCPLd7hGhvCpaEataUhC2W3gLTy1h1D2f+ps3SnRX0UAw73kCWfvsn3DN9PrCiUIHmO5zNX8HKbYslz1WPkisyGaogj//ZLKTVeszH5ozcG1pUyU2QVhG71e0Vga8EgLg5kmUrSO0OQchcgaJLsS7CMCMQXaAT/nGM6vQVjrywLT1ob4bimf7bHY2IXjRLVZ0nLZYg8nd5UIjjeOCQYveHd8hUYIpT01LTYDmjaLJS22iWZEu7T/39eJmTytEJgJY7oWJxrRRapEgE1yYhMrcO9Nj0BUhQa4SJ1K/I0HAWO/leCa82ZUNHZYcqIAKSdueWNwzr0106Y7QnWQTsv8BkKiPNzF+7sXMQ7livOO+Mcf4/VAaL/CKz3LK5KaGAXAOkg7F3iKQ=
         dropdown :
-         internal_properties : BQAAAAUAAAA12/DVVITgrZ42KxlHutReACaSt0ad69BGbRae5J9ToPjzwCvogl4wzybWap/7o9HyLVelkWvX75g34O5yzpnQvrKIvjGHZyux6SWeRgxe2gD1OZya+OwpCklkBwPPYAyTsi63eiW3c//j8GRkjpOX3TGq0fK3ZxKdb0X9j7DXBumROQQorrWpLShdNXN1chrytUEZ9kYS5jZxUNRDWEtIYYOQK+Z10Um6eHkrWxga2voVZ0zNILPKgARdUGXlSKkhJaOO4se0GGBXhrcARWlHzhhZYnqemGBWFw/D2k7lEx3ZXtD9MDURZga+5yMk8ai4LP2tGcsPxgCbujFZeUIn40oV++BYh13YuzxPcAkPYnrCw1xhEaQv55WcXgJuuoKAI2A07bmZP3nBkI+clGyZspNPNAjwrACKLmu7QBBTRXQ2lPqv1KdY9sAr+rmaMoGxYQWS4TEjzf+itzRx/95DRkFATtkPAeEqAsGYft7pNu0eEVL4YTvZ2gL89PdbuTERnZyBRbyitwWiK6R5LnNqnTSFfreCxc1WUBfVBqi1MnB0UYIVtgR5S6OPJwJi4ZGkTPx/8HrEIr7jXBFm9lKzXU9WSta3dHj3Xj3U85B5z8Y+O7sOKYsf0dewEt+RidnghNnhYWo9BtQXYtKNN93gRO/XfZSe/FNgUEzaqbPalGWQnn1ELlqbZKD9v1t3azDiGC1Kxf8CgS1fx3XgWSzs4VJZ2gruOx9f5WFd8hUdIxuZjzNu+QOHVmrpZxmMG+SSsOJH37YGJ61FPoJCEl4CEMuAV09ehUloiq3bCyJCbTTBcywVYBO749LDY3hZ8G4FIfuiXU8j1/0=
+         internal_properties : BQAAAAUAAAAQaz+A4/xW5gBUT7J2xQnblMu3eHx1S4vMF0wkCBzPj18lloBfsaIuthRZCtbDf7kph3RwSqUjJsGmH4EbpIY3T9krAt1xGESIUcSFJLtwnmsy7fi19GqusBGCnZQkwrKp54b1ZO1aZ18ehARrXc4S/QDiKegoKiilX9bbcx0sEIpJfpXLqaWFIMOnvxn6LIJgEzUWGgFoH68WQxaBKblJAHuLz/7JUso9vW47Ji7K9S3vEemv1WoUEigXswOD7HTpoh+1NvKtY5GQfYspOns3gJ0xgpAeESjqKlw0r6UBkvbKEtGhBfDtDat8o2n4SJql2EPfoYzIpbu3DHS/FGDPDw8gEEfmPeARbAnbB61MmFbRXqg3tlHsvBPV6f6eSfYtBLLPKHpgYKCvLt7WmV+VRVzZUo8YukbJJTM+qwYq7RpBhK+wPdk7+qdAW9/45LOic+ECp3T3GBR9tKC4eA3kfG9Ge35Dz9wj7HDDBOnusflyX7RyzqFLxKxhwcIcgHoPUfc7fzih5A5Hxkoooq1IxlmiYgIVrGoEhzR+/r0iW1FCPatFa6KiU9oM4DQBxh7Jk9BGD2hzXBHNVD3TpEchr5Mq66P6Ri+FV4bHwcsk8VmvY7x4BTtBJKsIf9Szbo0lgtvyAifMRe45lqSgPB3U6eY7XU0j4wBLoq2Xz5TNHdYa5+ceAmOlIm79pABsvDVQ6LfCKcxw5/KIRg7Ag+6kqVW6JzYEmC6Xg2lsDReBB8u+h07XrtVRh3Vdxi54uFjqGcG+G8w2MLBKO2GmdK1NUQdB5k9duafvd6b63+0fXnDyjN+UrOSNyh1rzKElIVT2chWOTNcNwPCGY7g8Th38MFBd3UDtW0QtJP+iVtti4Jofpt56PHCEZ3ak8w8KsC89uy7YrWyXderrGMcrqNnBwdvSgRcrDkcJI0knPVUjtMZKODJZQD4t9bZ1mAYba+s9OUeDtw==
          type : 7
         type : 14
        code_elements :
@@ -210,6 +239,30 @@ window :
    -
      type : 230
      enabled : false
+  procedures :
+   -
+     name : Procédure_remplir_table_compose
+     procedure_id : 1371197527911576310
+     type_code : 14
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //Procédure_remplir_table_compose (<pcode>)
+      //
+      // Paramètres :
+      // 	pcode : <indiquez ici le rôle de pcode>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      // Exemple :
+      // Indiquez ici un exemple d'utilisation.
+      //
+      procédure Procédure_remplir_table_compose(pcode)
+      
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
  code_parameters :
   internal_properties : BQAAAAUAAAAwjDLmDSZ0H1P68nJIeNfqR9EvRjU/K+sVcM1T6rhVNr+VTV1mZ/rmoweYbFDZUhBGcv8UsxlDxVCOnb2U/SQOvlGWzNby3/w/V+ppSymxv+Vh
   original_name : Modele1
