@@ -23,7 +23,7 @@ window :
       -
         code : |1+
          HReset(tb_plat)
-         Open(FE_form_plat)
+         Open(FE_ajout_plat)
          
          TableDisplay(tb_aliment,taCurrentRecord)
         type : 18
@@ -38,6 +38,23 @@ window :
     code_elements :
      type_code : 4
      p_codes :
+      -
+        code : |1+
+         SI OuiNon(Non,"Voulez-vous supprimer ce plat ?") ALORS
+         	HLitRechercheDernier(tb_plat,id_plat,FE_Plats.CB_plat)
+         	TANTQUE HTrouve() = Vrai
+         		si HSupprime(tb_plat)=faux ALORS
+         			Info("Suppression réussi")  
+         		else
+         			Info("aaaaaa") 
+         		FIN
+         		HLitSuivant(tb_plat)
+         	FIN    
+         	TableAffiche(tb_aliment)
+         SINON
+         	Info("Suppression abandonnée")    
+         FIN
+        type : 18
       -
         type : 161
         enabled : false
