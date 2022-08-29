@@ -22,6 +22,7 @@ window :
      p_codes :
       -
         code : |1+
+         //Ouverture de la fenêtre aliment
          open(FE_aliment)
         type : 18
       -
@@ -37,6 +38,7 @@ window :
      p_codes :
       -
         code : |1+
+         //Ouverture de la fenêtre commande
          open(FE_commande)
         type : 18
       -
@@ -52,6 +54,7 @@ window :
      p_codes :
       -
         code : |1+
+         //Ouverture de la fenêtre pays
          open(FE_pays)
         type : 18
       -
@@ -67,6 +70,7 @@ window :
      p_codes :
       -
         code : |1+
+         //Ouverture de la fenêtre plat
          open(FE_Plats)
         type : 18
       -
@@ -82,6 +86,7 @@ window :
      p_codes :
       -
         code : |1+
+         //Ouverture de la fenêtre localité
          open(FE_localite)
         type : 18
       -
@@ -97,6 +102,7 @@ window :
      p_codes :
       -
         code : |1+
+         //Ouverture de la fenêtre utilisateur
          open(FE_utilisateurs)
          
         type : 18

@@ -220,6 +220,7 @@ window :
       PROCEDURE MaFenêtre()
    -
      code : |1+
+      
       IF tb_plat.NewRecord THEN
       	Reset()
       ELSE
