@@ -44,7 +44,8 @@ window :
          	HLitRechercheDernier(tb_plat,id_plat,FE_Plats.CB_plat)
          	TANTQUE HTrouve() = Vrai
          		si HSupprime(tb_plat)=faux ALORS
-         			Info("Suppression réussi")  
+         			//Info("Suppression réussi")  
+         			
          		else
          			Info("aaaaaa") 
          		FIN
@@ -54,6 +55,7 @@ window :
          SINON
          	Info("Suppression abandonnée")    
          FIN
+         
         type : 18
       -
         type : 161
@@ -68,7 +70,7 @@ window :
      p_codes :
       -
         code : |1+
-         Open(FE_form_plat)
+         Open(FE_ajout_plat)
          //mettre l'affichage à jour en fonction de l'état de la table
          TableDisplay(tb_aliment, taCurrentSelection)
          
