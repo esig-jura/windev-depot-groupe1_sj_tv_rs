@@ -10,8 +10,8 @@
 <header>
     <h1>Liste des plats</h1>
 </header>
+<form action="https://kode.ch/getpost/">
     <div class="container">
-
         <img class="plat" src="src/penne-pesto-avocat.jpg" alt="">
         <div>
             <div class="titre">
@@ -31,8 +31,8 @@
                 <p>10.-</p>
             </div>
             <div class="quantite">
-                <label for="fname"><h3>Quantité :</h3></label>
-                <input type="number" value="1" id="fname" name="fname">
+                <label for="fqte"><h3>Quantité :</h3></label>
+                <input type="number" value="1" id="fqte" name="fqte">
             </div>
             <div class="prix-plat">
                 <h3>Prix total : </h3>
@@ -40,6 +40,8 @@
             </div>
         </div>
     </div>
+    <button type="submit">Commander</button>
+</form>
 <footer>
     <img src="src/pastadrive-logo.png" alt="">
     <p>Propulsé par Shannon, Reda et Théo</p>

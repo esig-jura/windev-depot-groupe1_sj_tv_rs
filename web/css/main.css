@@ -98,10 +98,42 @@ footer img {
     max-width: 250px;
 }
 
+button {
+    margin : 0 250px 50px 0;
+    border-radius: 3px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    float:right;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
 @media only screen and (max-width: 1700px) {
     /* DIV du plat */
     .container {
         margin : 50px 150px 50px 150px;
+    }
+
+    button {
+        margin : 0 150px 50px 0;
     }
 
 }
@@ -117,6 +149,11 @@ footer img {
     /* DIV du plat */
     .container {
         margin : 50px 50px 50px 50px;
+    }
+
+    button {
+        margin : 0 0 50px 50px;
+        float: left;
     }
 
 

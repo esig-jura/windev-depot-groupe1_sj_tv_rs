@@ -10,25 +10,25 @@
 <div class="background">
 <div class="container" id="container">
     <div class="form-container sign-up-container">
-        <form action="#">
+        <form action="https://kode.ch/getpost/">
             <h1>Inscription</h1>
-            <input type="email" placeholder="Email"/>
-            <input type="text" placeholder="Nom"/>
-            <input type="text" placeholder="Prénom"/>
-            <input type="text" placeholder="Adresse"/>
-            <input type="number" placeholder="NPA"/>
-            <input type="text" placeholder="Localité"/>
-            <input type="password" placeholder="Mot de passe"/>
-            <button>Sign Up</button>
+            <input type="email" name="f-ins-email" placeholder="Email"/>
+            <input type="text" name="f-ins-nom" placeholder="Nom"/>
+            <input type="text" name="f-ins-pre" placeholder="Prénom"/>
+            <input type="text" name="f-ins-adre" placeholder="Adresse"/>
+            <input type="number" name="f-ins-npa" placeholder="NPA"/>
+            <input type="text" name="f-ins-loc" placeholder="Localité"/>
+            <input type="password" name="f-ins-mdp" placeholder="Mot de passe"/>
+            <button type="submit" >Inscription</button>
         </form>
     </div>
     <div class="form-container sign-in-container">
-        <form action="#">
+        <form action="https://kode.ch/getpost/">
             <h1>Connexion</h1>
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Mot de passe" />
+            <input type="email" name="f-con-email" id="f-con-email" placeholder="Email"/>
+            <input type="password" name="f-con-mdp" placeholder="Mot de passe" />
             <a href="#">Mot de passe oublié ?</a>
-            <button>Connexion</button>
+            <button type="submit">Connexion</button>
         </form>
     </div>
     <div class="overlay-container">
@@ -38,7 +38,6 @@
                 <h1>Bentornati!</h1>
                 <p>Tagliatelle à la truffe ? N'attends pas, connecte toi </p>
                 <button class="ghost" id="signIn">Connexion</button>
-
             </div>
             <div class="overlay-panel overlay-right">
                 <h1>Un petit creux ?</h1>
