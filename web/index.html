@@ -47,7 +47,26 @@
         </div>
     </div>
 </div>
-
+</div>
+<div class="form-responsive">
+<form action="https://kode.ch/getpost/">
+    <h1>Connexion</h1>
+    <input type="email" name="f-con-email" id="f-con-email" placeholder="Email"/>
+    <input type="password" name="f-con-mdp" placeholder="Mot de passe" />
+    <a href="#">Mot de passe oublié ?</a>
+    <button type="submit">Connexion</button>
+</form>
+<form action="https://kode.ch/getpost/">
+    <h1>Inscription</h1>
+    <input type="email" name="f-ins-email" placeholder="Email"/>
+    <input type="text" name="f-ins-nom" placeholder="Nom"/>
+    <input type="text" name="f-ins-pre" placeholder="Prénom"/>
+    <input type="text" name="f-ins-adre" placeholder="Adresse"/>
+    <input type="number" name="f-ins-npa" placeholder="NPA"/>
+    <input type="text" name="f-ins-loc" placeholder="Localité"/>
+    <input type="password" name="f-ins-mdp" placeholder="Mot de passe"/>
+    <button type="submit" >Inscription</button>
+</form>
 </div>
 </body>
 </html>
@@ -61,4 +80,8 @@ signUpButton.addEventListener('click', () => {
 
 signInButton.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
-});</script>
+});
+
+
+
+</script>
