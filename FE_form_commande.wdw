@@ -241,7 +241,23 @@ window :
      p_codes :
       -
         code : |1+
-         TableAjouteLigne(Table_tb_contenir,Cb_plat,Cb_plat.ValeurAffichée,Cs_qte_cont)
+         resultat est un entier
+         //resultat=TableSeek(Table_tb_contenir.fk_cont_plat,Cb_plat)
+         resultat = TableCherche(fk_cont_plat, Cb_plat)
+         
+         si resultat=-1 ALORS
+         	si Cs_qte_cont<1 ALORS
+         		Erreur("erreur de quantité ")
+         	sinon
+         	TableAjouteLigne(Table_tb_contenir,Cb_plat,Cb_plat.ValeurAffichée,Cs_qte_cont)	
+         	FIN
+         	
+         SINON
+         	Erreur("vous pouvez pas ajouter les même plat")
+         FIN
+         
+         
+         
         type : 18
       -
         type : 161
@@ -270,10 +286,11 @@ window :
       	FileToScreen()
       	
       	//affecter le paramètre a la requete
-      	//exéuster la requete
+      	//exécuter la requête
       
       	HExecuteQuery(Requête_afficheplat,hRequêteDéfaut, tb_commande.id_com)
       	
+      	//une boucle pour remplir le tableau
       	POUR TOUT Requête_afficheplat
       	TableAjouteLigne(Table_tb_contenir,Requête_afficheplat.fk_cont_plat,Requête_afficheplat.nom_plat,Requête_afficheplat.qte_cont)
       	FIN
