@@ -300,4 +300,8 @@ div.form-responsive {
     h1 {
         margin-bottom: 20px;
     }
+
+    .form-responsive > form:nth-child(2) > button:nth-child(9) {
+        margin-top : 15px;
+    }
 }
