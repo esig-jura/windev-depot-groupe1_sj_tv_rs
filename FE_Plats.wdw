@@ -26,7 +26,7 @@ window :
          HReset(tb_plat)
          //Ouverture du formulaire plat
          Open(FE_ajout_plat)
-         //mettre l'affichage à jour en fonction de l'état de la table
+         //met l'affichage à jour en fonction de l'état de la table
          TableDisplay(tb_aliment,taCurrentRecord)
         type : 18
       -

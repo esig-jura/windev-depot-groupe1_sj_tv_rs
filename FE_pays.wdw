@@ -97,9 +97,11 @@ window :
      p_codes :
       -
         code : |1+
+         //La fonction HReset initialise toutes les variables des rubriques d'un fichier de données avec leurs valeurs par défaut
          HReset(tb_pays)
+         //Ouvre la fenêtre FE_form_pays
          Open(FE_form_pays)
-         
+         //met l'affichage à jour en fonction de l'état de la table
          TableDisplay(tb_pays,taCurrentRecord)
          
          
@@ -117,10 +119,14 @@ window :
      p_codes :
       -
         code : |1+
+         //Boîte de dialogue qui demande à l'utilisateur si celui-ci désire effacer l'enregistrement sélectionné 
          IF YesNo(No,"Voulez-vous supprimer ce pays ?") THEN
+         	//Si oui alors on efface l'enregistrement de la table tb_pays
          	HDelete(tb_pays)
+         	//met l'affichage à jour en fonction de l'état de la table
          	TableDisplay(tb_pays)
          ELSE
+         	//Si non,  une fenêtre informe l'utilisateur que la suppression a été abandonnée
          	Info("Suppression abandonnée")	
          END
         type : 18
@@ -137,7 +143,9 @@ window :
      p_codes :
       -
         code : |1+
+         //Ouverture de la fenêtre FE_form_pays
          Open(FE_form_pays)
+         //met l'affichage à jour en fonction de l'état de la table
          TableDisplay(tb_pays, taCurrentSelection)
          
          

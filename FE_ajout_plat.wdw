@@ -86,6 +86,11 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         //Ferme la fenêtre
+         Close()
+        type : 18
+      -
         type : 161
         enabled : false
   -
@@ -98,20 +103,24 @@ window :
      p_codes :
       -
         code : |1+
+         //ScreenToFile va garder en mémoire les données contenues dans les différents champs de la fenêtre qui sont reliés à la table tb_plat
          ScreenToFile(FE_ajout_plat, tb_plat)
+         //Ensuite HSave permet soit de modifier l'enregistrement en cours (si on est sur une modification) ou d'en ajouter un (si on est sur ajout) dans le fichier de données
          HSave(tb_plat)
          
-         
+         //Cette requête va effacer tous les aliments reliés à un plat
          REQ_Supprimer_Aliment.Paramfk_comp_plat = tb_plat.id_plat
          HExécuteRequête(REQ_Supprimer_Aliment)
+         
          
          FOR EACH ROW OF tb_ajout_aliment
          	tb_composer.fk_comp_plat	= tb_plat.id_plat
          	tb_composer.fk_comp_alim	= tb_ajout_aliment.nom_alim.Valeur
+         	//On va enregistrer les id du plat et des aliments dans la table tb_composer
          	hadd(tb_composer)
          END
          
-         
+         //Ferme la fenêtre actuelle
          Close()
          
          
@@ -220,11 +229,14 @@ window :
       PROCEDURE MaFenêtre()
    -
      code : |1+
-      
+      //Windev va contrôler si c'est un nouvel enregistrement 
       IF tb_plat.NewRecord THEN
+      	//Si c'est un nouvel enregistrement Windev va réinitialiser tous les champs de la fenêtre à 0
       	Reset()
       ELSE
+      	//Sinon il va afficher toutes les informations du plat contenu dans le champ de saisie (CS_ajout_plat)
       	FileToScreen()
+      	//On donne au paramètre de la requête REQ_affiche_aliment la valeur présente dans le champ de saisie (CS_ajout_plat)
       	REQ_affiche_aliment.pata_id_plat	= tb_plat.id_plat
       	tb_ajout_aliment.BrowsedFile		= "REQ_affiche_aliment"
       	

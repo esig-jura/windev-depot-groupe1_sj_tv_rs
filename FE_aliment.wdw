@@ -127,9 +127,11 @@ window :
      p_codes :
       -
         code : |1+
+         //La fonction HReset initialise toutes les variables des rubriques d'un fichier de données avec leurs valeurs par défaut
          HReset(tb_aliment)
+         //Ouvre la fenêtre FE_form_alim
          Open(FE_form_alim)
-         
+         //met l'affichage à jour en fonction de l'état de la table
          TableDisplay(tb_aliment,taCurrentRecord)
         type : 18
       -
@@ -145,10 +147,14 @@ window :
      p_codes :
       -
         code : |1+
+         //Boîte de dialogue qui demande à l'utilisateur si celui-ci désire effacer l'enregistrement sélectionné 
          IF YesNo(No,"Voulez-vous supprimer cet aliment ?") THEN
+         	//Si oui alors on efface l'enregistrement de la table tb_aliment
          	HDelete(tb_aliment)
+         	//met l'affichage à jour en fonction de l'état de la table
          	TableDisplay(tb_aliment)
          ELSE
+         	//Si non,  une fenêtre informe l'utilisateur que la suppression a été abandonnée
          	Info("Suppression abandonnée")	
          END
         type : 18
@@ -165,7 +171,9 @@ window :
      p_codes :
       -
         code : |1+
+         //Ouvre la fenêtre FE_form_alim
          Open(FE_form_alim)
+         //met l'affichage à jour en fonction de l'état de la table
          TableDisplay(tb_aliment, taCurrentSelection)
         type : 18
       -

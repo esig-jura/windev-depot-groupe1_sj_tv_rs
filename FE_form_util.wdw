@@ -22,6 +22,7 @@ window :
      p_codes :
       -
         code : |1+
+         //Ferme la fenêtre actuelle
          Close()
         type : 18
       -
@@ -37,8 +38,11 @@ window :
      p_codes :
       -
         code : |1+
+         //ScreenToFile va garder en mémoire les données contenues dans les différents champs de la fenêtre qui sont reliés à la table tb_utilisateur
          ScreenToFile(FE_form_util, tb_utilisateur)
+         //Ensuite HSave permet soit de modifier l'enregistrement en cours (si on est sur une modification) ou d'en ajouter un (si on est sur ajout) dans le fichier de données
          HSave(tb_utilisateur)
+         //Ferme la fenêtre actuelle
          Close()
          
          
@@ -201,9 +205,12 @@ window :
       PROCEDURE MaFenêtre()
    -
      code : |1+
+      //Windev va contrôler si c'est un nouvel enregistrement 
       IF tb_utilisateur.NewRecord THEN
+      	//Si c'est un nouvel enregistrement Windev va réinitialiser tous les champs de la fenêtre à 0
       	Reset()
       ELSE
+      	//Sinon il va afficher toutes les informations de l'enregistrement sélectionné précédemment
       	FileToScreen()
       END
      type : 34

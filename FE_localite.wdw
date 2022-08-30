@@ -89,9 +89,11 @@ window :
      p_codes :
       -
         code : |1+
+         //La fonction HReset initialise toutes les variables des rubriques d'un fichier de données avec leurs valeurs par défaut
          HReset(tb_localite)
+         //Ouvre la fenêtre FE_form_loc
          Open(FE_form_loc)
-         
+         //met l'affichage à jour en fonction de l'état de la table
          TableDisplay(tb_localite,taCurrentRecord)
         type : 18
       -
@@ -100,17 +102,21 @@ window :
   -
     name : bt_supprimer
     identifier : 0x23033f11081e9b14
-    internal_properties : BQAAAAUAAADJiz3Ok1hvRHbLBbAUjNybJVVHER2jmUOUAesB910s0JotNYDNVnY39HTMG9z1HJt3mS5RaA1ZSdTKuGyOdNu1RC9gtGfvDRdMBRN29XI7dGOq0afc5B7o0KfOZjGBfv71H+EyKcoEQdn8WWZZIPyJxpfzgcUG56smPhD/oFCbSuO7kNuWfb7589QEoRciDJLkX9SecgpLz00FAd0UJqkM8Q6ZYqVHEOmRpVtNA9uheA0UYeGpnefQvUMcKPGev3dOkOF7dD72ghme5F+49aNmyQfK/9zpPQotByXVyQOypfae4nR5Ri1D5gy+/FtSO3BD57RApv6TBi489j3yLOn2n/r6JHJYOYBwn2Ilp6KhdZ0ED2fJd2vbA5bDDAdRlqgwFzZFZOh2DhKMf8FxJXls5YGQ9ZVXPtaYnfPQXl8P4jC3+E1xGnuQrnfvPZ2o7K5lyvdH3Vqs91d7vcM6OiqnguowvBP+duGdfZa8+GhwjBKNq4T1CPLvXKQtC0tLzcI3/skV6nhCyGEF+YdJWfE+K8e9M9l/CWRhhwPXBrJGR2vFDKER6ui/zcxn5zoo3kA1XObSfzfeQvntIJH8Ypjbl1zhbHrOqnOzAbMdIBePZV5wxt5szLlUnzOhqY2eOd/OMbfSi+LrA5lM19OeP0FgefiOBELRBbWJfB7lcJYn9LnNB9mGQG4h85/Dti9vRiOXH2eq7986Pw==
+    internal_properties : BQAAAAUAAAAPxFs99WSbWhOhoAk8a/b4VkDi73cIW9TDIUEHwZG/iI6qmwBabd/pQH8/l4dM9zY/DxqO/SgcuYjBJW0KMi4uSXozKrkR54Jb9z+H8M6kZqQPbpYGhFGxD4hanQu/9KP2xDnu7PeXjS72a7PGQcdKnyDlVd4xyg+B63rO3zZqX4Xol5AaSoKKde/icX+EGeeB6Y1I0Yw933sCFVsym6fBg0fT5y8PcWZR2UULszTn+tJpkdjUNknjPbq8WZ4Qev//YZFXELIk0hJytY5kv6XFoi+3b3sGEbkyhOoqBMoIgpJhxCtssYLc0MOcwMmRAQ4zC3V0xneLT9zNe+RgiuapOR7df2Ruh7kijLoAR0CyvLCE0EPKb/1mVtTO4EeHe7U5y3mjb64yQWnuHoNnEaBj2mm7GyjV8gvFMTQilKNg8wHPuTvKeikTL63S9wuoxadyYviDtLwchO7tUtHsOjHWe57rNMgQnqRmK3UuBuQTaRfnsrB02go2n6Dm/8NZJNHO2l4td3woP5CrXoU7PZzPuA9S/1gnh6tALfi14IoTLKCn0SlE2Ii0AFQwQ8pCbR8SAr3MFBGy5U69LSemomtkPoLPaFZLkbNNtD9a3yH1K+JlYLzn+6MMiuOmUy8Oe8V533wFkFSEugj8Qv1UfyzlGhDlKtKQqMqEd0XK+0h5/LzHEIHS3e/7t1vNydo+vi8dzH+B1ZeYZR8=
     type : 4
     code_elements :
      type_code : 4
      p_codes :
       -
         code : |1+
+         //Boîte de dialogue qui demande à l'utilisateur si celui-ci désire effacer l'enregistrement sélectionné 
          IF YesNo(No,"Voulez-vous supprimer cette localité ?") THEN
+         	//Si oui alors on efface l'enregistrement de la table tb_localite
          	HDelete(tb_localite)
+         	//met l'affichage à jour en fonction de l'état de la table
          	TableDisplay(tb_localite)
          ELSE
+         	//Si non,  une fenêtre informe l'utilisateur que la suppression a été abandonnée
          	Info("Suppression abandonnée")	
          END
         type : 18
@@ -120,14 +126,16 @@ window :
   -
     name : bt_modifier
     identifier : 0x23033f1108209b43
-    internal_properties : BQAAAAUAAADaOII7/hKxLBr/d7rOGJSZqZXnQCJy3rZdgePoK99K+8xYsl4m/TWcd51LmlEuM4yTkymXXESqacEAj6bSKx4nbtmkiXYjGTfGfqZcoYB13tOYK6yrRU7obPuAbDeXZshHrSXmU1Cawa1Ir8z3lmAPVI2bIZtgUX/+1iJ9rma/0AEVIEMMp3g966SGg6HsqIAelWQeFJjZB3kZ04uy/HE2Y4DB+rMJqmG5vUFLGeE1hh8OyWETm12Yof+uvtc0O7XsrgU/PhwENjEubinC9wOYR4H+I/4vw/I9DwNj71m6r6isIkwjnPsrpsyQ9rX8V25txWzQkKyp9vqo2J9UdsUsUdS+AKBay0DEGyCz9L2CbppxQoQgEL76CBu2UQycS909bInySzn5SR+ZCjbeGKIlclYTYiSweYE9Qhatw8LUL4XMq3rMxzLXx9C2fk7vmcMOc84QDENrIqAEPIRbPQ/0V8+7AdrPNSw2Ru1lwZ8Z1fu2Yr1E6cEqocnAcGCyblsUEwRKIZFdw0JWSCh6wIZbLMgstFio4Gt+dA7EuznDxPxWM/rIa3vO0sFa/BdTHwlCYQHX+qRBxRL2J4r1ncWA+ItDVaZkco8F8Tk/0N7RwwK+vpszFubMdkqKq/znSfnbKn4ysCVR6GDPxs5JpIKdSr9Pc971cdLW5O/5xv/LEFWp493h1fvc+LQszcaoSSYi4rzlomzNUA==
+    internal_properties : BQAAAAUAAAAW9N6nWnaNGGYrQ5Z63LidrYmbRBZOguoBRRecTwumFzg03uqC8SEo4yknhi2Sx2B3d3XU4GiKSww2rMehdc+QZ1r7q3Upb7c85Z3My+CHTlH8sb+GgrxU8KcwuDOzomDv8YnKD6z2nWFE93jDKkT3LNFvfXeUdZuKegIpCopTYFkBrKcwA6yJz+hW70WYBBieeaDCuEwNm72dk09eKI1mS6w9ngeFBv3d6cHXfW0hBp/qXa3vn8l0pZuG4rvYN1U86qlTenCwwq2KljXWW98YR+2i33J7J6axg8O3632u3+Bo1pBvYA/n+nhoCkmYu45dSSiMXGgFWgY8sDsQIrkEkcj6XFxmz/xg9wDHutMM+GCHbPo++uBYrkFoXzIiJR+bOjNI4Rvzv4UvrFwEznRvKIzVIHIaO8eLkODbYWAu2QuKTehqSfzFlW7AtHSVm8V82Xg26q0N4A4i1irho8E+/a0NX/iRP9qEhJ+r721Lj3F0PFO6g7Ngr/eK9r4QCPXKAU6QV8ufsRjMMgaYrhD1Qt7WOkbaGll0+oiCGYfdNqqE7aCWjVXEOJe0GuVxectAZwM1mN6D66jcGZhr438SZmNi2wvlz8imBLhQI8DmHDGDs8F3EfgpTLU1HQkT53qMW/EXRIG1TISjKqJluPYR3stDDzJZ3b7CEJsV2suHTBHtv/Hd0f/g/IhwgbLcnfoW3qCBBsAZHA==
     type : 4
     code_elements :
      type_code : 4
      p_codes :
       -
         code : |1+
+         //Ouverture de la fenêtre FE_form_loc
          Open(FE_form_loc)
+         //met l'affichage à jour en fonction de l'état de la table
          TableDisplay(tb_localite, taCurrentSelection)
          
          
