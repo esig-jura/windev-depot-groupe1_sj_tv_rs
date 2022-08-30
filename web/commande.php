@@ -1,3 +1,15 @@
+<?php
+
+session_start();
+
+if($_SESSION["logged"] != true) {
+//echo 'not logged in';
+    header('Location : '.'./index.php');
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

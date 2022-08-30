@@ -10,7 +10,7 @@
 <div class="background">
 <div class="container" id="container">
     <div class="form-container sign-up-container">
-        <form action="https://kode.ch/getpost/">
+        <form action="https://lmo.divtec.me/pi02gr1/getpost/" method="get">
             <h1>Inscription</h1>
             <input type="email" name="f-ins-email" placeholder="Email"/>
             <input type="text" name="f-ins-nom" placeholder="Nom"/>
@@ -19,22 +19,21 @@
             <input type="number" name="f-ins-npa" placeholder="NPA"/>
             <input type="text" name="f-ins-loc" placeholder="Localité"/>
             <input type="password" name="f-ins-mdp" placeholder="Mot de passe"/>
-            <button type="submit" >Inscription</button>
+            <button type="submit" name="inscription" >Inscription</button>
         </form>
     </div>
     <div class="form-container sign-in-container">
-        <form action="https://kode.ch/getpost/">
+        <form action="https://lmo.divtec.me/pi02gr1/getpost/" method="post">
             <h1>Connexion</h1>
             <input type="email" name="f-con-email" id="f-con-email" placeholder="Email"/>
             <input type="password" name="f-con-mdp" placeholder="Mot de passe" />
             <a href="#">Mot de passe oublié ?</a>
-            <button type="submit">Connexion</button>
+            <button type="submit" name="connexion">Connexion</button>
         </form>
     </div>
     <div class="overlay-container">
         <div class="overlay">
             <div class="overlay-panel overlay-left">
-
                 <h1>Bentornati!</h1>
                 <p>Tagliatelle à la truffe ? N'attends pas, connecte toi </p>
                 <button class="ghost" id="signIn">Connexion</button>
@@ -49,14 +48,14 @@
 </div>
 </div>
 <div class="form-responsive">
-<form action="https://kode.ch/getpost/">
+<form action="https://lmo.divtec.me/pi02gr1/getpost/" method="post">
     <h1>Connexion</h1>
     <input type="email" name="f-con-email" id="f-con-email" placeholder="Email"/>
     <input type="password" name="f-con-mdp" placeholder="Mot de passe" />
     <a href="#">Mot de passe oublié ?</a>
-    <button type="submit">Connexion</button>
+    <button type="submit" name="connexion">Connexion</button>
 </form>
-<form action="https://kode.ch/getpost/">
+<form action="https://lmo.divtec.me/pi02gr1/getpost/" method="get">
     <h1>Inscription</h1>
     <input type="email" name="f-ins-email" placeholder="Email"/>
     <input type="text" name="f-ins-nom" placeholder="Nom"/>
@@ -65,7 +64,7 @@
     <input type="number" name="f-ins-npa" placeholder="NPA"/>
     <input type="text" name="f-ins-loc" placeholder="Localité"/>
     <input type="password" name="f-ins-mdp" placeholder="Mot de passe"/>
-    <button type="submit" >Inscription</button>
+    <button type="submit" name="inscription" >Inscription</button>
 </form>
 </div>
 </body>
@@ -81,7 +80,5 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
     container.classList.remove("right-panel-active");
 });
-
-
 
 </script>
