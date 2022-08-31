@@ -279,7 +279,7 @@ window :
   -
     name : CI_adm
     identifier : 0x230dfea109aaeabf
-    internal_properties : BQAAAAUAAABKkQ9RaFZgs/hBp/OUHpkShlmEpJa2Y8CrFDJcgapFjEz54HdAxQ/kY7t09OKW9G/I71X00IgRwqV1H8c+qLqdzbSC79/E5by72u8zWS1zxua5IdNs/VNIYUWagg4mjULqmQVb0qY5liF8NMoRE8ikoZRWX4Tz/rP2iokSIfl7qP73jWGSIqtsX2mL+yN8NqAACLbtqAOmNhK1ENpG3ykOgAD7+l16ynuzVRbhDpVFXgQO2l8985fSIX/uU05Ks33ftb4uBbT2LrE26rYboDDvaWhp7P3OZJZFAbfaM1LTkV1Fx/5NPh/AlUax5yhAAlVqgNIphkGYejorhvV45giEwGlShexTJPQs4rWdj0N3hVSAtncxF4/fBrBvLKlizop7pAAFx1emocbFXMRwL230R6Dk2U3/rnbOaAE60ozfnQz5eVEZ4vvs9phL0ET8RuYfzUGyTqNebysM4mQ8tnKcv8ldZpWFqT8rXgu4RiIgCGjWftQkPXmXC3usDrLAyGaksLvi1siiIeIip9NGyPHTSU4Ah13bGN1XTptqN3TEsCimOWu4Ez+RuQliIkJW7asG/XQ/Fx3zGRtzVms3TeXDGlt+v+U2PDcXIIdNQGhdw1+0frvvydp2RemqaVtlp6g+pUX0J048pRZXOBwFMD9Nk7+4SZn4LxzFUW/Z+sufJFH0Rw3x0y8TzSiJr4uVzFhoJpCiv+YMqcMO9oKsQB1ld92t4JfpN2Ogbgh13/IwuDVdscZYancw7QwTnZ5JBU6d0Ayid9FLeSBxT+BfoRAfHZuBt493KiCVhAcWR6UCtnvAhkWciHnFtQQfDIFUAHs4iW/sV67L1avCL8zxUH/AR9M=
+    internal_properties : BQAAAAUAAADce0GbohiSvfZLte3meDOYOOu2fkAg7bIplrDeM/yP6i7bwhG6b5kO2UUK7vT4Jp0aka8mqpILFNvXfSHYSiSDr5Z8iUl2N6bBNNUFUz8VbIBTay0eb6Uyb0+wJPAwl0iEs6gKbqqt1kHwFEI9L0wgCQA+5/B3knueZjlSpTUv/Jbj7bluXpe09+Vb47/QyhwIjA7dpB86/sqxMFLqg8U6wHwjEpEuNhPLgT4BiunRArx6wh959yN68VPuq5Lm70nfuW52oWhi7hG6Mq53/Iz70QQRzKlqOEa9HecaDwaPPcXRTzbxsvPoLbIhz/z0dqGKrMqpAtWsMjoflv0cSjRwsM2K1RgPsCQELt09EwcbyYRcXv/No+Ofbry/HEVO2oYr0KB1Y4v6QaZJlJS801FQf+TkQdmD0p7WpIlCBjjDkRyrrytHROk2FELJUtJO7Mi9v3cc5M00kYmmAD6CkBgW1YPj4DPf/5GZ6LmCZCQemkYoxC7aT5exSSXaIIASdpB6gsnk3DpwG3C8JaWEijeFpyimcXMNFidNcGHkTW5K2u7oH/Uu7QXz9/NQPCBoUx1E7yqZtYcZCyl9BE3dhyPNcCV0uQOY+iGVinWnDpqrrUU+lBWdGwhAEwNo89n3FUoMP+te3VCar4yJzobDUh1HOfnGux9yZY5zm91jMJVVdq92Bc83nUVlm2L3cTnHmloWUE7kVQjKU6EIRHwy2qz/kfe31q2T3YmaaHLDbURmck93W6xmZG0ml2b96yzb67B/Mu5A1bMpV8LTIdZV217pR00zBT2BMCbvLrGs3T/omF0iYHtq+vdDN4aRkg+mtq3KG/lS/cDZ46XMOfonCsWKsUU=
     options :
      -
        internal_properties : BQAAAAUAAAA8fVBcLaWVjiwOuaQwf9hpvp/DLCaj55A/pt5VufZKhhpFYXdmSfXxPQwLpwcQ+Fn8m6AevFlFmNHIfhY9FqoojOmmnjAcNr5zIObmGIeQT+Sur77HOAmffqCrnp2MJYVomnPz36kTaZhA3RbAJR4CNGDFj3s=
@@ -290,7 +290,12 @@ window :
      p_codes :
       -
         code : |1-
-         TableActiveFiltre(COL_adm_util,filtreEgal,CI_adm)
+         SELON CI_adm
+         	//Si le champ interrupteur est = 1 alors la table va être filtrée selon si la personne est administrateur
+         	CAS 1 : TableActiveFiltre(COL_adm_util,filtreEgal,CI_adm)
+         	//Le filtre est désactivé quand le champ interrupteur = 0
+         	CAS 0 : TableDisableFilter(COL_adm_util)
+         FIN
         type : 17
  menu :
   name : _Menu

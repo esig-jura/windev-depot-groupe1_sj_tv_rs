@@ -217,7 +217,7 @@ window :
   -
     name : CS_provenance
     identifier : 0x230dfb7908549556
-    internal_properties : BQAAAAUAAADkofR4SugmrFnkOZ64PzGD0F5WDT6VlCZEElvIfqA2s5/E7xsi4AZqGGXU1iCv15s7QKn4w4/XnxcGeYvd25PG184Im4Tl/1OwhFaK1/en443tPK2vCj2MOQqm63UYHrmvuP6fCceVoX8faViRuomTfLenWdEaSVQ1wmV6S9+dQJ5A7L213X5vrzq+EuHTf9h0BTZM7UU6+KzPtXlnuYigj+lhtzrJbvwCN21KOTZfQTih5YJNuUfMwhY4CdY3C9aayK1Hh2u+oiVihYVO/IWHC3fv3VF7tfrwv4IJ4Qngl6weV3LyUBJALXfXsenIo3Ny6F+DcWTDqvEaah2C31K6IdFzSkrW/lMnOTmTD+SojpwmzC50SuDGYG7wu9q4AtDSHnNoJa1Up+0amYTIMFs4rje9Yudfi3A+Lzto9tziDO0BlD3PVkxWLntx2pl8CdI7vksySm/0T1GZyTu71n4fD7f+G6/nKOvrSEIhwDONnyDrrELBpsmbFwfrxEa0YGkG1hEwmLYzgU7baqIVwjE9LuKv5vbcOVeiGdHjtam4YrZ70mfhGh4lywAl+KNcl723vfbTUowauZ6V4osrVuva5yJd+o0aXZ4kjkfeNwmkC7XineLAsUutLv29ph792w/zAHUuoZrX7iJOvUVBCyzMwfOP563ybJ+rTn/ZO9UBNAc5hfXhe3OZnXQllJgcOOJ+gr2SIMTb2LXynbBxlXZCatj3Z50hi+JWP53g3HinjrCYbER9fNcCD5R9HS1JEwhvLhPQUqkn3QUgcSGIUtM/vTHtZ9+IUnA5QrTpkTZNfxghjTlllTPIc61x+01Slj1Fohkxwt/UjpYeI59etVGh5jRbaf8YdP1pyz5Bql36oTH2BpnKS0tqvVH4hk9WJMkBhaIQtTuTYjczBExrNiSuX6C0Kh/TEhqkhpeSWh2O7RTOU+JIWWrpe0t1WGgvmUd0LO56GkLGEW4ZQEs/I8LJ0TdGD7LirzlLTGKQyZfNYIbUi5gZoz6lyhbk9RQmLNQAhgqbOo0Z1KV1OD/osGbWAw/+pCKOHjVKuRe4kldN08IFcXCmc3kI8gmjvUUT6jL8Px9xwQ==
+    internal_properties : BQAAAAUAAABgWVwfWqxe+lMWLD/JuoasDCzvnX98Zhbf49rqhpvhK3yGl7kitCXDBlWNhrDznGq1TdojqWP2oZwSxj6fsAO6EIfaLkGAxu1G/eJTJ8VvtW7KCohKhHftQ425j00wBaQ0o5Xz4JvLs02ZMmBCv8oP4IaLTd1ayvLhwTHEP8ODiCzlqr74X0akX2A4Y5mNTiI63aYNZAr6m2Zl7SIbKV4hrhNVYQf1bTn/CGtCZr63Y2W5SVx61VFXdlJ2JViV7nlePkoz2qIEfN6/+CZI9m5AnnT/UmQK1J4ie5apUHw2RRnb5tkQL2ygW/dGEA/PMY3gG0pWCd0yF+4iawEusmfFKb6UVac+gLSFL614Cjil30kMdvUoU+xgZ/lLl/p5YLc2pfsxSS3BVA3lyA9C0XgbA2bEgr2WgK1tRYqrCTRETBi4yff2B3bF7UXFJGTVzEGK3e4ENFnkre0rcdPu59Jvx0gXWdyrRjXwqT6Vi+riotGk6R2fjIB9BaR2xAba1+enUz/tfHG0NG0SDyPgYn/BjON6hATx1xrNx0ezhWyU6WD8LZG9jUx2VFslEoXlYzrnbjVnsGtI/h+46E/zJWPzLUkCvr3teyul6YVek3xUiO1BYpIoJgcOe8g57EBMf1LbQRTCUTcZ3Qnb7U9tJP5Ra6Q+d/u15qzI6cEhadTzRet2YKt9WIcW2u+PoojRXEcw+1haok0lD1gH8ax97rzX1DlmiUGiyT3ZHOc8ek93H361z/ztSVtpQp2D7ZG68f85v/IczFilxCAhFZsswRVSa6ASF+Flgv2GiRKXb+WhDvSW7Flv9tX/nmo/81OpPhbJjW5vOnq2RT13CTsE1udq7Bm+Px+jRm4S7mT5eD5cRO87Pffw9CPZWC6aYHuXDgBjGPNISfB/MYJwKKStQ7CLfw8BmutETq/d/fkcCvx8etwf2l7KhFwGoIJJdmqm/WZGh5vCdPUwCjtkZEvXMMb4jUpbKw4XCTrca6wMR7yF36j/vNI15DBsiU8CNVC//FmeDdalDJ0UTiC9ArY4pzhKFInWV7qpL0XqOHgQpvw4wd7ha+VUt1+JMVE3kCemabKq+G0a
     type : 2
     code_elements :
      type_code : 3
@@ -236,43 +236,12 @@ window :
          TableActiveFiltre(COL_provenance,filtreCommencePar,CS_provenance)
         type : 17
   -
-    name : CS_alim_bio_veg
-    identifier : 0x230e14810aa95a64
-    internal_properties : BQAAAAUAAADx3ITEJIvZcW1Qrw5k6Z9Z4MWt3L4x+SJLVPBbymttDqlr5vA3lyX48axacsHKMhPIYeg/U2DZyMnGFiuXv6Kx273cQ4m3yxbWlAHAKW1lWCDYwk1dQx1iEu3Wa2T1FCE0VCXV3KpJAnA7sc2h8r/qMvrm/eopStzgR72Qh6wd5bELs1lnnm1K494lUM55j2xDNpTXVGpMp/FMnGCL1TXE5FDArqJM44o8k9mI9fDXBqQKrcHpzXuZquCFRIZ5/2oYIvVmK430XxS8NhRCloNC19FFtTvO/4lV5AImzAJqpy4zw9RI4LWPNH2lf1hkj5Z1PWELyYA88DLRx8UiammJHrXkD5OqEKZWoQdQczgLRoMaHK3gULiQgIeJyrdH+/aKA/9bG5xFi4F9SSjBdUU14df9deoKK20oi1KG5A7l1ilK8JjEIjU7hpSKdOORmCCIc7exInj8V5qNHv3g3cdqaeviz0Gtq7yW2YzBMwMnXIuTkiRHtWco40nRzgjz/ryotoxR/x76YzNsn7z/IjuKcCQ1pz8E6BdqnzSESLg5SkCikvQe/e+1TsPm2hBUMWnSUbWFZQfFYlCfH52YBgG3E3H89+KRUlFuJ/1sIwdRJ1PFLjVvQGxt9pET7120K9gdgghlqUBRan/OPxsQLglCp+ni/rgiFbInFLjgCPSJGIZYCoBmPLzJsn/eM/hN3GUbz74LvsfIm0aj+kS+PcL1YS9GAP2ACtz1a8QGo1E3lyAgjON1VP08F4Kepa02viX4YIhjbPYrb0yTgTNvYwCNMcCbXi8l69Z+NZgRhrzbZpwa4MWet8kIRU4QK7DZ0hj95/R273flmCzTyaKbYtd1nmEJ7u92DHGJci6EHK2bH2EAhFzU
-    options :
-     -
-       internal_properties : BQAAAAUAAAC2+6a3bx0vk4B2r1WGzotUeUymZe+Zu80UM6L7yTfpE2Hp/rdXlA2fL4kvrhk7ZLoZn/dDOiAEISJsFGEGtjc6+3TzRMBupXZ7+s4Dfz5jV0+Xp3AwTNxt5igB6FMC+l8efPe50/pxDPG2uQYARl8XizY7BfE=
-     -
-       internal_properties : BQAAAAUAAADZxLErF6pgQ8OB+E4il+LDSrxzIvFDyc7DEgFZpUNJRReemxCuS1cZjj7vZRwOejzY8DQ58u6z53kuBHoxxLOg2HUczgmvyAQeooQZOn5582q6Yio59SdJdpQJu0OvFjRgyUROt7lGirSms8jy8FNZ8BeONrBEQZhw
-    type : 6
-    controls : []
-    code_elements :
-     type_code : 6
-     p_codes :
-      -
-        code : |1+
-         //affecter ce que l'utilisateur saisie au paramètre de la requête
-         
-         //IF CS_alim_bio_veg = 1 THEN
-         //	REQ_affiche_alim_bio_veg.para_alim_bio	= MySelf
-         	//REQ_affiche_alim_bio_veg.para_alim_veg			= Null
-         //ELSE
-         //	REQ_affiche_alim_bio_veg.para_alim_bio	= Null
-         //	REQ_affiche_alim_bio_veg.para_alim_veg			= MySelf
-         //END
-         
-         //ensuite on repeuple la table IHM avec la requête
-         //tb_aliment.BrowsedFile = "REQ_affiche_alim_bio_veg"
-        type : 17
-  -
     name : CI_bio
     identifier : 0x230e16c50b153665
-    internal_properties : BQAAAAUAAAArcEHvq0hh4qbShLx/tbcosxNJn6MbjKHfxJpHJWYDBFxx8j5ATm6c8Q2IPHpLip9LibEw/aPjktKY8gCoZSn+E3XWA+LOjM289tr0DFkoBs2faLLPAc4JvtWr08nCgfoXNjybc3C6+DNDMWk+iPsbN5huX5h3cSzBlDyX9D4JM51iL2CHFJSU4edGMp2QtfvFmgWs7IOlU+MhdBblXlmVvW0tZtvR0Zz0QZ4eHPLZMB4LVD0hR8Rs+2wVQqJfFGa7TAyvMaIEfMGXnNbMothjSeAfqtWTP6A8rLS5ilkNmGAsdsCM91WwH9vEv3ZMfrWEU9ovGcqSBJzUqOjiPGVmihteqZO3CliCe/gdyb+jV3PKEej78QaGq+KVcG0J+1dDXy4hFe0uTQqvDybeQoqw7zkcXgckVfRFzuU7qZ38mH9/crjsfTzJRTR+BGdFkzFv7nNVoinuiEMcDLby3O7lOvH2mK6YQLBe32mXeyPICxUCT5DAFP1RLInaHRm9s8ibcmmQ2uYNHNwFJT5pnqb58hZYhRHjwQ/VDAC+p1J5PIBsGUz0SKbfVK6NunOZfcdsadrViVTAyV9cFHiMRA73Cl0ewftzk0J20G2mmdfmXpGlSo2N0RHhREFnt5+gmLudvsueHxeN4ZeCj1eG0/zjKEybI3l35u2Rjm90w7J4DtCyZNk0eswFgkGpzPRoseqv9MkHeST9vUhysCEYGDoMFzSuABGRPgFS8aMipnqmTvpFBgqgB1b2wPuX2f1Ntll7eRPwzoSqWhw9cfL/Ba40iOF0G6QQGF9TUWlLfnB+dO05bvUARujwKEFTvzfO6oNjzkVnNnqGbs0qN9GKcAPkEPp0KFUrWJ63s83TDNy6YDaBJtE=
+    internal_properties : BQAAAAUAAAAe3HNnqSBq/TmaKOpglCVJyl512APHvT8FbFkI0FR8W2AYl+pd19uCgE7CiBRzO+lcTxlsPMw4OuL2Sx2SOozC7swzKbvSTP+2TJqcLfqFU84+pqjkFBlJgmwZGHyYEvN6NzKqibKRAsa6If1wdUWjzgffes8Q87Bx5SQ7qkfyOgMTt0XSFZRyoTaX3PuZET2+Rp+VieVVJBZqLyqYe+cJUKd4FKxvabz8A13cfWb+iDsx226dBQQxyvpdXlr1adKvAnGlEqOkRPCvKhCmHYHobHQzfqjIaz22tfPqkT0RrAMwJlhBbBvoZJOiydLJdNhleFZT+nzmRxK3WFZfa+/hnuWTEhTpgPTaYMUHTcPZW9GpqAz7g+Ydh9mVZAP/+OoO7cR20lkGpmej81S96Dd0usmZOn8QxhZEPKb3qPpaGop/itA5OiWOR019XYeOVYGdmRzgzLc/MNTIV7dkaxYL8sQlGRH9cI00EEe3ztai0F0j5v+kLAb5jTFjSKNksl4XGfJctri4GHgvEBWednpgSdSXWdg8zT09xyI8xHKz+DHSlafEapzmLjJliL3IRYie56IPaqorhBJ/qodJ9vOxXKceQdb4AKZnTgNissOErF1PGaSYbnG0MKfuHn0MSxvDB0GZ7r9lpk1UVWakaJ1Eu+BBM33PlgS/fWesprLDfY0MrywJXPZmWk+quMvYYmiHC2bg5znmFR3OL4kPcvFtrJnMhwqoABBK7gF/edXLTHjQoBj8HOq/onSH8Sl7hhy3IQxpi4QKgSaHRmur+rakT87AZ8f6GV38JpUkcyf1OdSsgqLlcOPpCGVoxr3Kzw+/59W3lGaIvnS4LnQSkO+SXR1Y6tloRq0K5+cELcQa8xI=
     options :
      -
        internal_properties : BQAAAAUAAADgcgIpv5cPitaW/GY1Q5VCv6DYhDZzld3FC8c9JN+Ov1Sf2a5oUP6E7B7GdMQ+xrq32LNQWgzJolJ5nM9iLvgCf+g1LHt/fypcZOwoHcce55Ejcijs07INK1KWG3CevaBMCEzJagVoRjw=
-     -
-       internal_properties : BQAAAAUAAACvqeftHXaN4WggJ2ItBd8EGiarR77Vuxiau+4TfgNJ06GHXnFbvcQaFmWdwfkFF1nUvycnnYK/reIYLaMRIBh/1ywcK0baOPAZFM3R0rGuSgtnqoaOEdCukbX10wi5ca6GDLCsQbZk2Zp2ng==
     type : 5
     controls : []
     code_elements :
@@ -280,18 +249,38 @@ window :
      p_codes :
       -
         code : |1+
-         //affecter ce que l'utilisateur saisie au paramètre de la requête
          
-         IF CS_alim_bio_veg = 1 THEN
-         	REQ_affiche_alim_bio_veg.para_alim_bio			= MySelf
-         	REQ_affiche_alim_bio_veg.para_alim_veg			= Null
-         ELSE
-         	REQ_affiche_alim_bio_veg.para_alim_bio			= Null
-         	REQ_affiche_alim_bio_veg.para_alim_veg			= MySelf
-         END
+         SELON CI_bio
+         	//Si le champ interrupteur est = 1 alors la table va être filtrée selon si le plat est bio
+         	CAS 1 : TableActiveFiltre(COL_bio_alim,filtreEgal,CI_bio)
+         	//Désactive le filtre
+         	CAS 0 : TableDisableFilter(COL_bio_alim)
+         FIN
          
-         //ensuite on repeuple la table IHM avec la requête
-         tb_aliment.BrowsedFile = "REQ_affiche_alim_bio_veg"
+         
+         
+         
+        type : 17
+  -
+    name : CI_vegan
+    identifier : 0x230f107b01483c90
+    internal_properties : BQAAAAUAAAAOHN+ybWuZiZyO1Pe6/O1y8uDt/qd8axd/7qFQ5bJEeBtwgadY63rdR7ZofhPd8wNRf7EHKUFouJqJECD3up1VgD+dNG/m9rpZfVu/eeaWeOzHmpmrH0f//cYn1CMcjPrrqr1z9+jXgWWt/KO4doLL5JzcWHSI7Aj68wK5T/xu7BY2CUdrTw+Z4StMHOm4Hb36gMxbxvmz4S8cj6Oh92layWLpIoxzU/6e0NlYRDN8lxCP6S2wxhCC3Ekur/UVgQt0hp2gy/lVac+qMiq0vXkpE2rSKLmStohnKb+sLyDwhUr3Mg0cn6a/8Y/CkfDX/YGrQwFgeCMDwHQWZltwH0iq9t+5nJ2OlshsZNccbqLF9D2KM2LVS5rGg9mgg4smqRFOikv/lZE+LDoJ3lC46mxVhLGoV78gNl9qBE/SGIF3GIRe6tSGSixuGQs7nhCFuFcc01CubPCd3ZZhstIIkYqFcHtM5EtaoNGMKRXo/BMiZ3NOMyralM4D8soWdg5dNtFPeNo2Yi1BB6mpf71uFTeyPJT7OZ90S9lug6WexS+GgY3+8j/OfPrrsEAEvtZ9MywPwR8XSXKqHdLklkVbbj/6RU0XgzcJdcUqQUURpolHwsZeu3kzHON6hPxGX0H0A1H7n3DsWU8HIU8kFLb/nUVIviHDM7lB2tLiYgPHHDAvm7zquCHxTEopauMvj7keyHXBqndOBdeXu/QNoqTu1cCAWr3yj/YnTRJ83Pe8WPLF5HtVNNLAY3yH6P2V2ssTUlfVlOXr/cszPKmATtH5oqPHUyGNIwg/unbR7zxv/itoTgh8m4ZqTfZvL8p1QFw7/2Hgt9lt0jzN7bT8mL9qdapyKMxA5vB8b0Nei5nRdQ==
+    options :
+     -
+       internal_properties : BQAAAAUAAACqH+5BFb0EHZX9Mc9Y7fMyhEhDtIiG9UH+woGdJSHeO96MfrwUZmVhhfJtF8MEVAp5yo4D/3Lyr/p1pIABEzNcymnaxHZvzIrY9QfuVBS/t3I4aYKoJFLzgFArIN8ZCQmVkfc8nKXH4YC4
+    type : 5
+    controls : []
+    code_elements :
+     type_code : 5
+     p_codes :
+      -
+        code : |1+
+         SELON CI_vegan
+         	//Si le champ interrupteur est = 1 alors la table va être filtrée selon si le plat est végan
+         	CAS 1 : TableActiveFiltre(COL_veg_alim,filtreEgal,CI_vegan)
+         	//Désactive le filtre
+         	CAS 0 : TableDisableFilter(COL_veg_alim)
+         FIN
          
         type : 17
  menu :

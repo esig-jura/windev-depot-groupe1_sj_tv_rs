@@ -10,7 +10,7 @@ info :
 window :
  name : FE_Plats
  identifier : 0x23070c6801302115
- internal_properties : BQAAAAUAAAB3cGADWW36YzwC83nUWnooUZz2YNhCNDcIQnqmTCaoeAYZ4CTi7oaIQMEFoTrtvnDitnvvVEX/4fU/p+V0Jgn3s+ljLf+b3hzHmqCWA7ecr3pUHlqnGalESjXHvgKRxq2UaxDlPQinzcnohHWhErs014Ong4F5Tn8KQev0le1LWUbvxLMh6TjwKar+D7CYEfihGhN1w+Bxx6t5uNT36uJ66ReTLRW6IuJKiGPCKYPxPJSgXAwMHxSQ1SKNhFYrZ/FtYyRScBuZ5Upl+1IPpizUJj/1VcXfw6LWkSYC/filTQcnn9YKcdLE39UkBN58t+JywA4fGsZ55VIBkhHwVUwXKq93Xgv6gx0sdCrYW8MS1A2/LEkvsfLcJVQqA0llwtVeHkMLmmorXHY/MUhc0jXjZ3mdcYCRdv1XFlXfd2oH9ErmiVGYyb/lePLH09VitJr3GaD9ozp6V5yC8STZZVA3+LWM0N25L99NA7SD9H5LG4zsUGqxOHHBWpbox7T5VBsJAnlkYcLi3peNP548oyEZRdWsED3znrslXmVsg17+L9H02Z3KAOlmCatBtPZOngR/GG0eCEuTY0CxQiO8OcbLMZ04qIImIShRLyOSwde48TfqLtAe5MSfrgDhaCWJ4DGx0ZMupYoU4G0REPyw+YAbiP3E/5viQ6eqClcq0ChwMRZK9y2/vA/9LP3XFLbyeA==
+ internal_properties : BQAAAAUAAABqK5Dpo5dnnjOcIAC7UGCqFVHP4pNZ9vHe9FKROn8RvK3sa1lvvfnFjYLgAENIFzoQytU9pbI0tSRtxlmV2CR49+Us5FyVQPZLOwIfR8QM3zac7cwmtRb8M4J6P1D2ToYT4b38XpMJSZTVj2nnZFsa3/dr3dSakBosOJcw/tKOiZDavwEzmfspdghhA8Jjq+Wv3VOckU8kk9pvt5ZrYNRIxQ2J6jQw8R7TaBNqTa4KrkEFxaNdQzkJCsx7s07aP9ONeyp0LqTZ/q930GOjZcBp3tNEHmEpMM4VOROAwr4iYWt0Bi5B2PzI+Ndm6MZoanU2htbPtmMVCJm2qAfHYC5dwNbwInCKC+F5VE1sdfYVcuwzXLNs2v9gIi6hjQUE+aH9ChPtm6VoaFX/RL5sjc5xVsuLhYP225OAgn5Fs21CntWS6Y+TFNxrJ85u1fl9y6SiKRwjnt0bbflsgG5tINFpyR0wTiCW+vXw1ztdbKNavW+khDxG6SaPTUxZb8r2FxPc+FvszBMRYtyF9Cjs4Gjp4NXQLrQy/7d+VpIOFb5WJniJHgNmSbHSe6537FBxleppFoZoLi2kPEwoisXo/+IuFSiZ4BkY8QAzwiXdLvUH3fhb7CgpeN30NWQzn4AWRBtB7K0dz+rSZKk0ffU18UOTO2HLrIpYw4x53AvA+d4=
  controls :
   -
     name : bt_ajouter
@@ -344,7 +344,7 @@ window :
       	Error("Problème de création du fichier.")
       	ReturnToCapture()
       ELSE
-      	LigneAecrire = Complète(tb_plat.nom_plat,15)
+      	LigneAecrire = Complète(tb_plat.nom_plat,25)
       	fWriteLine(nFichierID, LigneAecrire)
       	FOR EACH ROW  IN tb_aliment
       		LigneAecrire = Complète(tb_aliment.COL_alim,25)
