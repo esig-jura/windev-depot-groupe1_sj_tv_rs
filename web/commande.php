@@ -1,11 +1,11 @@
 <?php
 
 session_start();
-
+/*
 if($_SESSION["logged"] != true) {
 //echo 'not logged in';
     header('Location : '.'./index.php');
-}
+}*/
 
 require 'getpost/php-ref-master/ref.php';
 require 'conn.inc.php';
@@ -39,7 +39,7 @@ $stmt->setFetchMode(PDO::FETCH_NUM);
 <header>
     <h1>Liste des plats</h1>
 </header>
-<form action="https://lmo.divtec.me/pi02gr1/getpost/">
+<form action="https://lmo.divtec.me/pi02gr1/getpost/" method="get">
     <?php
     try {
         foreach ($stmt as $row) {
@@ -63,7 +63,8 @@ $stmt->setFetchMode(PDO::FETCH_NUM);
             echo '<p>liste des aliments</p></div>';
             echo '<div class="prix-badge"><div class="prix"><h3>Prix : </h3>';
             echo '<p>'.$row[3].'</p></div>';
-            echo ' <div class="quantite"><label for="fqte'.$row[0].'"><h3>Quantité :</h3></label>
+            echo ' <input id="idplat'.$row[0].'" name="idplat'.$row[0].'" type="hidden" value="idplat'.$row[0].'">
+ <div class="quantite"><label for="fqte'.$row[0].'"><h3>Quantité :</h3></label>
                   <input type="number" value="0" id="fqte'.$row[0].'" name="fqte'.$row[0].'"></div>';
                    echo '<div class="prix-plat">
             <h3>Prix total : </h3>
