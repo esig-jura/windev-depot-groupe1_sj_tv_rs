@@ -47,21 +47,29 @@ window :
          	//La fonction HLitRechercherDernier permet de se positionner sur le dernier enregistrement d'un fichier de données dont la valeur d'une rubrique est égal à une valeur recherchée
          	//Windev va parcourir la table tb_plat et va s'arrêter sur le dernier enregistrement ou l'id de mon plat (id_plat) sera égal à l'id contenu dans la combo (CB_plat)
          	HLitRechercheDernier(tb_plat,id_plat,FE_Plats.CB_plat)
+         	//Si Windev trouve l'id du plat alors il va le supprimer HSupprime
          	TANTQUE HTrouve() = Vrai
-         		si HSupprime(tb_plat)=faux ALORS
-         			//Info("Suppression réussi")  
-         			
+         		//Si la suppression a marché alors l'utilisateur reçoit un message "Suppression réussie"
+         		si HSupprime(tb_plat)=Vrai ALORS
+         			Info("Suppression réussie")
+         			//Remet à 0 tous les champs de la fenêtre
+         			Reset()
          		else
-         			Info("Suppression réussie") 
+         		//En revanche, si un plat est encore lié à une commande alors un message d'erreur viendra prévenir l'utilisateur qu'il ne peut pas supprimer l'enregistrement actuel
+         			si HErreurIntégrité() = Vrai ALORS
+         				Avertissement("Suppression impossible, ce plat est relié à une commande")
+         			FIN
          		FIN
+         		//On passe à l'enregistrement suivant
          		HLitSuivant(tb_plat)
-         	FIN    
+         	FIN
+         	//Rafraîchit la table
          	TableAffiche(tb_aliment)
          SINON
+         	//Prévient l'utilisateur qu'il a abandonnée la suppression
          	Info("Suppression abandonnée")    
          FIN
-         //Remet à 0 tous les champs de la fenêtre
-         Reset()
+         
          
         type : 18
       -
