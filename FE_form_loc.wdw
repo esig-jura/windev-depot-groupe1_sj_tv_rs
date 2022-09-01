@@ -63,6 +63,10 @@ window :
      type_code : 4
      p_codes :
       -
+        code : |1+
+         Close()
+        type : 18
+      -
         type : 161
         enabled : false
   -
