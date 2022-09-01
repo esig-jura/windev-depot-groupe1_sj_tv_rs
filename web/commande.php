@@ -65,7 +65,7 @@ $stmt->setFetchMode(PDO::FETCH_NUM);
             echo '<p>'.$row[3].'</p></div>';
             echo ' <input id="idplat'.$row[0].'" name="idplat'.$row[0].'" type="hidden" value="idplat'.$row[0].'">
  <div class="quantite"><label for="fqte'.$row[0].'"><h3>Quantité :</h3></label>
-                  <input type="number" value="0" id="fqte'.$row[0].'" name="fqte'.$row[0].'"></div>';
+                  <input onblur="findTotal()" min="0" type="number" value="0" id="fqte'.$row[0].'" name="fqte'.$row[0].'" class="input-qte"></div>';
                    echo '<div class="prix-plat">
             <h3>Prix total : </h3>
             <p><span class="totalPlat'.$row[0].'"></span></p>
@@ -104,6 +104,29 @@ $stmt->setFetchMode(PDO::FETCH_NUM);
         die($e->getMessage());
     }
     ?>
+    <h3>Prix total de la commande : </h3>
+    <p><span class="totalCommande"></span></p>
+    <script type="text/javascript">
+
+        function findTotal(){
+
+            const totalCommande= document.querySelector("span.totalCommande");
+            const quantitePlat = document.getElementsByClassName('input-qte');
+            const prixPlat = document.getElementsByClassName('totalPlat*');
+
+                var arr = quantitePlat;
+                var tot=0;
+
+                for(var i=0;i<arr.length;i++){
+
+                    if(parseInt(arr[i].value))
+                        tot += parseInt(arr[i].value);
+                }
+                totalCommande.innerText = tot;
+
+        }
+
+    </script>
     <button type="submit">Commander</button>
 </form>
 <footer>
