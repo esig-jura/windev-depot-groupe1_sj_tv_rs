@@ -129,8 +129,16 @@ window :
          //Dans ce cas-là, supprime l'aliment
          HTransactionFin(MYSQLConnexion)
          
+         
          //Ferme la fenêtre actuelle
          Close()
+         
+         
+         
+         
+         
+         
+         
          
          
          
