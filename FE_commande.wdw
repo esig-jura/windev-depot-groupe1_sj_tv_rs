@@ -64,8 +64,9 @@ window :
      p_codes :
       -
         code : |1+
+         
          si OuiNon(Non,"Voulez-vous supprimer cette commande ?") alors
-         	HLitRechercheDernier(tb_commande,id_com,tb_commande.id_com)
+         	HLitRecherchePremier(tb_commande,id_com,tb_commande.id_com)
          	TANTQUE HTrouve() = Vrai
          		HSupprime(tb_commande)
          		HLitSuivant()
@@ -151,7 +152,7 @@ window :
      -
        name : etat_com
        identifier : 0x230ca59e0ca2c132
-       internal_properties : BQAAAAUAAADj8YvTH/r+htk9xbDQo1aZAUIhx1bDSK96wD19PSvdAzpHo1y0prDn88+LudGf7WWt2tmPlA8TjvGGkJqPdVdmUztwHWP8EbjN8KNWgH/OALLIFIKjTHT7za3LcF3/x+1AkED7gDE239RGNVbAkebqtl9d49I3iPGGngzw4c4Bwwr26fQCu5qWe6nsF8EfnSdE58DN/FkGQF6BU7Jn4gg=
+       internal_properties : BQAAAAUAAAB2Otvyd/yadNDFJhK9Yj+xTPYDGg5pmqsU+TvWJdSqFLqhnpt2EgKB0lkTq0SAyWl5LF2ti24uUMyr3pvicF+Hgzpjwg/LAAYEHu90mC1yXMDnu3IEVpLQMk1+O22NFZgwsTrjihuUv0GidgBY0yXE+fwTnzF32/aY5VhSkDr/7J1eE9FeuOfsaDhwgYbwafdpEhjUNhLaeuHzegpd3jzZWSv7jA==
        type : 5
        content :
         internal_properties : BQAAAAUAAAAnZuZqta5DodFetjGIJM4YMfpfcVyNpVayANMmZ1OpGHmAIUyDsZcJTc5tW4L1ovxZxFMEP5ROVOWHXh8PkDlJYql2XQtR/n4Tx73jvaO1xvfLTC8NImmxrec//jPVUU5/n6iNt3Y/qk1Den1AcvHhNQ0XdIeFc9UqCPf+qslLve+wXIVf/OB/+6+BPT8C/ZSz5O6qUTWBrtjcnmih33aufHYiJaMjraGg8VvIVYNV0pkVd75/WBDsAGW5TsEvEf1rSKnQoOcayRaYmLK719DtpLr9G1PBnQixWyIyEmL74FZx2ng2HrAHORuF6H5Zq0CvAYzTSfDi3ayJC1vrLmB8SduiDncUMLh2XaWPVuUpHHbxfFvoC+CqBvvLkY0ni7dgAE6gIrBflYv4t69ITdQVkAcHu6zx1vdpTn5arLMRn9q2/T5c8z1KXhPf9J0bTRIVKNLkjIA0GzmQ4nHJMM6nzIPkcg3W7HJE8On9b3rtVvsKpfNNZhZ4J1miZFEh2vU8YPPrIrl+EHClNfOBXtPqL7mGRJrx10M2d9FV2btx3cd+hd9jegU0oP1FKG8wpqnQOkAWoTvdn/j0IqZtDKsIQjFRncO2fz6y5sC7IfuRlmmtSY61kjglhRk1x8XdamKJmEMWw96ddr3byV/m+C/R6saSefvbhHioE7RpwFxQdeSpV/D/d88uJpROA+kUZkoSxbAlXWeByGF0mB2cCw==
