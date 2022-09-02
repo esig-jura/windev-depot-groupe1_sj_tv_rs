@@ -23,6 +23,18 @@ body {
     border-bottom: solid 7px #a60303;
 }
 
+div.prix-total{
+    display: flex;
+    flex-direction : row;
+    margin : 50px 250px 50px 250px;
+    gap: 0.5em;
+
+}
+
+div.prix-total span, div.prix-total span {
+    line-height: 30px;
+}
+
 h1 {
     margin: 0;
 }
@@ -126,9 +138,13 @@ button.ghost {
     border-color: #FFFFFF;
 }
 
+body > form > div > div {
+    max-width: 420px;
+}
+
 @media only screen and (max-width: 1700px) {
     /* DIV du plat */
-    .container {
+    .container, div.prix-total {
         margin : 50px 150px 50px 150px;
     }
 
@@ -147,7 +163,7 @@ button.ghost {
 
 @media only screen and (max-width: 1300px) {
     /* DIV du plat */
-    .container {
+    .container, div.prix-total {
         margin : 50px 50px 50px 50px;
     }
 
@@ -220,6 +236,8 @@ button.ghost {
 }
 
 @media only screen and (max-width: 700px) {
+
+    .plat-to
 
     .plat {
         max-width: 100%;
