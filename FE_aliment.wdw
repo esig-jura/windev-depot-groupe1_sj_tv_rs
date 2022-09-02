@@ -321,6 +321,13 @@ window :
       	Error("Problème de création du fichier.")
       	ReturnToCapture()
       ELSE
+      	
+      	LigneAecrire =Complète("Aliment",20)+...
+      	Complète("Provenance",15)+...
+      	Complète("Bio",5)+...
+      	Complète("Végan",5)
+      	fWriteLine(nFichierID, LigneAecrire)
+      	
       	FOR EACH ROW IN tb_aliment
       		
       		LigneAecrire = Complète(tb_aliment.COL_alim,20)+...

@@ -10,7 +10,7 @@ info :
 window :
  name : FE_pays
  identifier : 0x23033d2906f32961
- internal_properties : BQAAAAUAAACsDPleJtKPmra8+LPJQYMdflDd4SveQtbHYST5p9HCmyoTHC/Ykiizgfl84Yyoykk8joZNr7zkS/Poi3UyFFWVVf3JbwqDFN7w/godjA1zmdJMefXmz7sC09x3vbxGV1vl2z0EUlQcXRoa89zBz2cCMErtYDvQ/wlxotL5eT44yjHarD2G8yRHf3Zx5CckXcsx6hO+0ewu65q8JnHsz5/UyRCTW4iZQXLZ6GLwBGJTxnPrQqK4xDowp+s3NshsV0Cg6Y8tIvBWgUHUEQSlKoVR59Gq9JdXyAm2nxpzlh9ZUsGTG97XzjbB4feVpjCIn96W3/zMcV6ReUpPt0XuRLO7Y7/+0yesrS+T6jIOvMwFtk98WARZoJ2SNqZO0XTo4V/rrSUnkxg9u350aLk4GK3uEGcqT4sdSiwACWbn1O/aIkg7p1ygiC7pRVgPW34ntS5bnAzwY+ntc9sq52IejlmlrYtphjfWYQlYwxq/z41OxWbZtCnpWU5rqx91+gXIpYFrIutiYPoJ3leyXs9O2JwGqHW5Wm57qmHY3+Wy5uKi7hOmAA7Va1FjXHz18g+U5n2ZRlJnM1UMHQnqHn1wHF1Yv3aFyJSrnQ0xaevOXmXhjl3mY4m1e7rPxYXoPZ3kKmG8J/2Kwvpj10ybrQyYIkFS9yVWCFjZaisW5xBL
+ internal_properties : BQAAAAUAAACFQNCWw2GV6FL7nxCf5EoKbzmpG7ntSrv0CLqUj9z8hsTY3j5CFUWNXI1QgDdRACSL2ZxNpGFJZdaqLZw1Ldmen3bSwfE2tw6De2xClFT0yYSlHPvwOVv8HxHgsF8kOjxOwqVboO7EwRfH/a5Q9TGqr+0Nn9FvJkX5Rma/0QCL/rL2CC/82O1v7UAA6NCt0KLH9C0UvnjvtLUEMTXCvASN7aA2mHSRAS4RFbtQbilivYL5ZYgx2DGIRFqh4PAK0tSYR+T84dVLczV8KcVIx/+9JPM/PlhZkCS22fffmkglNpDrww6FLhn/4zLszihIgErwDnETeFSfOfwOhpkKcS3lExApxGHNjUpBItt3zmtJ5k2bu0urAe2nQEqjvFbXW6Fn3DZsAa/pCFKGK7B4m5EWxrQVVhumBD2oJxfo/BhK1proApGuD2TSrRYuBhRwVVLZMdtB7VxH9l9otFfAqdOf6VTkHRlXgdow2S2AxXj4j65cVYobljJwZZfUl6d5gw/7b/p5CgPhjYdsr4Tee9aYhAKgZ+5s6EiqP3zzrutw1Lu9DXXpLM26tOJAp+NjYG+psfPcJ2BF2bjNF0/vyKaSxKRa9WP7+43kGcRrvohifCbUi4ZZNsZbVHQwty40f4cXcwMn78zxQkjJFGdM93SUoF891hl4nZRF5Hw=
  controls :
   -
     name : tb_pays
@@ -154,34 +154,9 @@ window :
         type : 161
         enabled : false
   -
-    name : bt_export
-    identifier : 0x23033df307753dc5
-    internal_properties : BQAAAAUAAABpXdzsS32U9MU11SPfijsKMIB8fkJ42/mHTjPgJOv3mzhVPgwPdesg0Nbb1k+iIacK0jjJLkf2gZZvnGNwYwE7LmO/GRwwAPz1WEhCTh2sQnwCDotNnPpCm9VIvEjbc0FSgzH/OMsu+RSGaVDWBGmY6I+3EOBdqK7vMDBtR3vU5jILlQRnRVKyDRIeMjpMUUkkj/YRuXVGCBaaELQ9CxykEL6fWU+SDozh5I6+YwZIJK1t5jS9qR+4wILhVP2JAHl6dpcSVaAjgObTdwIPvAnCb7LgWBXcjHctrGpBXBKYVTV273oQxWYUtz+P9tV/UeaQwKsLvkDEmm2ZZn7a/EUQn82UM2Um1oj8a947ezfqjWhJZBfvG+naigdKi9pfDX+tTP9gOOYNJRQ+oU2eSNQ/PKiNUzBKi3mYEHBjKcsmZ00/jCNb8IzUgkNyPXfBcR77qE8Tn2jccLyheXmKZ00Mvdo/RITwX1MkY1epWcw80v61dUYT8oieUQfY6L/VQ6V+E6zIH4+d5CL32TfvwwbZOBx24Wl/tlMabb/sk+A9Sj+T17qoUpKOrIt0WhVZ2UOWxkScafsqT9ez065JwXmbFntF5uIR0Y2dsusrK0fPx6J/pYsM6qhqn7v/sTLeImXIhfxuaCjk8eV4hF7o5asqfMcTHyWlMajumwzgF9rFLgsvexbc4jM/73lV8w+ZBfh4MMxeHO7A6vvrlxX38Km8WBXDj7IMatMYT6v1zVcOvMjxXoGmlwDB
-    type : 4
-    code_elements :
-     type_code : 4
-     p_codes :
-      -
-        code : |1+
-         
-         sFichier is string
-         sFichier = fSelect("C:\Répertoires", "Fichier.csv",...
-         "Choisir un Emplacement pour le fichier a exporter",...
-         "Fichiers Texte (*.csv)" + TAB + "*.csv" + CR + "Tous" + TAB + "*.*", "csv", fselCreate)
-         // vérifier si un fichier a bien été indiqué
-         IF sFichier = "" THEN  // le bouton <annuler> a été cliqué
-         	Error("Vous n'avez rien indiqué.", "Recommencez !")	
-         ELSE
-         	Procédure_export(sFichier)
-         END	
-        type : 18
-      -
-        type : 161
-        enabled : false
-  -
     name : CS_pays
     identifier : 0x230dfd6109440777
-    internal_properties : BQAAAAUAAAA5XPthF8us98DxbYmFk35XlxFK6NDQhNAO3MvSs2Ziqw3cFqMOppDgc6gMBUCBOelaP8GVsGQq5JyQKy0LmAU809nvv+BYbk0OvNL+beY8u2bgmuQN6OQH3AehLp/c+hr1adWWfVBo9URpuAhj8jj8yvSYRNF3JtpE6J3BGbJ2J+GPgdHcTqQ+QUxPeVAgHVBTwDrFonmMvAuGux/y6Cggwg3XmrIKJWGI7jaka5wFaegmuiJJtL8jk2Kqb9WK6Pwqyn18UkcgQHSQ0pSWP+Y8jVuRnEiCWSKl2AIrkmLWipZG3Sg0h9F2+YPRBDfDT0wSIDLiUAwo7Hkox1gOg6dnXxwmmsIc/9XI6gZVZNnzwh/WTioFa1llFO/w7mPosLvDz2JkO2SIkG9KTWu0MYnhX2ysLT8l+siKGW70tMcidYPZqKlBh7vuXCyO0do1S3WR+T3nm4Z3qGPSpmkS3lXWE/mR+2OsWGQCF384Fdizq0c2pJDO+p72XFdQdgyVUQxkjY/Rn3GXSZ5jtGxWFAMMdyRHxj6nlyVhSE97IR9xaTbVmJmKeIJVBjpgJLS9nkWogqr7YcJtHyQJLLXrWnGK0CDVsD4IwxSWJtuVqep3qgHzGs0Wdc6tUBV59ApbWylFsYqhhLbexGaMr/R03ou1ccBQt6Wwno8hE/TQOS1uEYI0erRAGAY2vFevpe27dKtud7rz5JtgNvae0w3x0ebeWujeYHMNn7Z6dP4NTfI+7jJPOzccNWuDxi9saIxPhgf8uAUqF9TME4tGM0Xxj9Tt4zRnuLaNv+PrVCdeN9nDLkCCtIjYZ7POg0n+lJOSF56+IiIwSmswyAv0qdkYd/sKZ5O+WK+RHAXpGJ7sW8tfHLrqTkizdFQZenX8QGtMaWDFGh2+dV54zlEC2Z3CKQk0vTprsIlN7mW6kelVdYxfJ9ENUm8xJe4pCxtE6q0qIAZeMC+KnBbv0l/u63C9Il84NrP5S5lCUplG5z9v8BdPUp6WxRG3p8Pqr4xngXmUjwqDuYSMD1KN99X0Uucjt1ls14P40a4fjCjKmUCQfOZ51x6aAHZ+ji6fnahCev9VdhZA2Zonr2GvH2HuA+ER+5V9Id6ekpY=
+    internal_properties : BQAAAAUAAAA5XPthF8us98DxbYmFk35XlxFK6NDQhNAO3MvSs2Ziqw3cFqMOppDgc6gMBUCBOepbP8GVsGQq5JyQKy0LmAU809nvv+BYbk0OvNL+beY8u2bgmuQN6OQH3AehLp/c+hr1adWWfVBo9URpuAhj8jj8yvSYRNF3JtpE6J3BGbJ2J+GPgdHcTqQ+QUxPeVAgHVBTwDrFonmMvAuGux/y6Cggwg3XmrIKJWGI7jaka5wFaegmuiJJtL8jk2Kqb9WK6Pwqyn18UkcgQHSQ0pSWP+Y8jVuRnEiCWSKl2AIrkmLWipZG3Sg0h9F2+YPRBDfDT0wSIDLiUAwo7Hkox1gOg6dnXxwmmsIc/9XI6gZVZNnzwh/WTioFa1llFO/w7mPosLvDz2JkO2SIkG9KTWu0MYnhX2ysLT8l+siKGW70tMcidYPZqKlBh7vuXCyO0do1S3WR+T3nm4Z3qGPSpmkS3lXWE/mR+2OsWGQCF384Fdizq0c2pJDO+p72XFdQdgyVUQxkjY/Rn3GXSZ5jtGxWFAMMdyRHxj6nlyVhSE97IR9xaTbVmJmKeIJVBjpgJLS9nkWogqr7YcJtHyQJLLXrWnGK0CDVsD4IwxSWJtuVqep3qgHzGs0Wdc6tUBV59ApbWylFsYqhhLbexGaMr/R03ou1ccBQt6Wwno8hE/TQOS1uEYI0erRAGAY2vFevpe27dKtud7rz5JtgNvae0w3x0ebeWujeYHMNn7Z6dP4NTfI+7jJPOzccNWuDxi9saIxPhgf8uAUqF9TME4tGM0Xxj9Tt4zRnuLaNv+PrVCdeN9nDLkCCtIjYZ7POg0n+lJOSF56+IiIwSmswyAv0qdkYd/sKZ5O+WK+RHAXpGJ7sW8tfHLrqTkizdFQZenX8QGtMaWDFGh2+dV54zlEC2Z3CKQk0vTprsIlN7mW6kelVdYxfJ9ENUm8xJe4pCxtE6q0qIAZeMC+KnBbv0l/u63C9Il84NrP5S5lCUplG5z9v8BdPUp6WxRG3p8Pqr4xngXmUjwqDuYSMD1KN99X0Uucjt1ls14P40a0fjCjKmUCQfOZ51x6aAHZ+ji6fnahCev9VdhZA2Zonr2GvH2HuA+ER+5V9Id6ekpY=
     type : 2
     code_elements :
      type_code : 3
