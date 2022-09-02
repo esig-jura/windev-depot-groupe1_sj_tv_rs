@@ -42,6 +42,7 @@ $stmt->setFetchMode(PDO::FETCH_NUM);
                 <select id="f-ins-npa" name="f-ins-loc">
                     <libellé>NPA</libellé>
                     <?php
+
                     try {
                         foreach ($stmt as $row) {
                             echo'<option value="'.$row[0].'">'.$row[1].' '.$row[2].'</option>';
@@ -95,8 +96,27 @@ $stmt->setFetchMode(PDO::FETCH_NUM);
         <input type="text" name="f-ins-nom" placeholder="Nom"/>
         <input type="text" name="f-ins-pre" placeholder="Prénom"/>
         <input type="text" name="f-ins-adre" placeholder="Adresse"/>
-        <input type="number" name="f-ins-npa" placeholder="NPA"/>
-        <input type="text" name="f-ins-loc" placeholder="Localité"/>
+        <select id="f-ins-npa" name="f-ins-loc">
+            <libellé>NPA</libellé>
+            <?php
+
+            // la compilation de la requête sur le serveur retour un objet PDOStatment qui représente la requête sur le serveur
+$stmt = $dbh->prepare($sql);
+
+//exécution de la requête
+$stmt->execute();
+
+$stmt->setFetchMode(PDO::FETCH_NUM);
+
+            try {
+                foreach ($stmt as $row) {
+                    echo'<option value="'.$row[0].'">'.$row[1].' '.$row[2].'</option>';
+                }
+            } catch (PDOException $e) {
+                die($e->getMessage());
+            }
+            ?>
+        </select>
         <input type="password" name="f-ins-mdp" placeholder="Mot de passe"/>
         <button type="submit" name="inscription" >Inscription</button>
     </form>
