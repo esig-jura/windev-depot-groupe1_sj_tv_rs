@@ -30,9 +30,11 @@ window :
      p_codes :
       -
         code : |1+
+         //La fonction HReset initialise toutes les variables des rubriques d'un fichier de données avec leurs valeurs par défaut
          HReset(tb_commande)
+         //Ouverture du formulaire de commande
          Open(FE_form_commande)
-         
+         //met l'affichage à jour en fonction de l'état de la table
          TableDisplay(tb_commande,taCurrentRecord)
         type : 18
       -
@@ -48,7 +50,9 @@ window :
      p_codes :
       -
         code : |1+
+         //Ouverture du formulaire commande
          Open(FE_form_commande)
+         //mettre l'affichage à jour en fonction de l'état de la table
          TableDisplay(tb_commande, taCurrentSelection)
         type : 18
       -
@@ -140,7 +144,7 @@ window :
      -
        name : COL_util_com
        identifier : 0x230ca54a0c8a75f5
-       internal_properties : BQAAAAUAAABgrQ2f0WibDYYApth04VqC5ZofG/mFb2a8JcDrW10pMkqkXshlKMtuLedoQdEwOMxmz1xl4LHjQSplmz17TPrZOeJEpGzUJk3symDUoxv0PpQTamFVNuc366YyRgS1Ny3Q7wgSlwTTfT/qpeuLxOixqeTkTmmqv6JVGZfQdDWd8oV7lTnEbLl4gpjGkEA2mhtzQBxCTUZahRQV8d1ITWIi7vG8dBIPkgY4OKx6LvuaYVrHdJOenePiP8VdENAv3wrERnnU2QaHPfORWoZSamBsKGBM6o8Maw==
+       internal_properties : BQAAAAUAAACbMLggXoU+Fn+T8UNJNK3VyL2yjHYG8v8lvE9i4CSgGT3/cS1SBbZPzkLL7PKX22uBWoeGBVIGagOIriAES+UwkAmbjWXFLUbdxWOPdN639c/WNRJ603K8eCGtEfkoavA3vWRMydBrIRc8Y/qOx8l6UCGJq+5pkPX4fAqlAbgQZxiWuAYJJ36/xVsZRT0pqSR6TxNbJq3DbA8Q/Mp9OHk7iRRf0beiL6Wb288fi555Qr2iX7h7+Di5xlzkiUmmZpNPyfRpNuFcEIbkLev/3feFw/vXXwSX8A==
        type : 2
        content :
         internal_properties : BQAAAAUAAAAF4rOQzNENgEelwEXp23UWisMQV6BskeTxNmmBcTOoVyjeapOieRTPAKTSGu3WVIlH30zz9ILAHI7NgPq6f9lUZl3ghOWk8+Mc4W/qVPkHniM8ZUp2uPbrl73Lw2GrQ3l93hyNkMPA+xLYsEDH0jsK9LiqqfWYDUwxfB8XiW4NplayucTSZTEbn5DYHVR6W9qQLuCIucGte/IvKDhnFPSPEYy3WKrPUfJAdU6QHkoRKS/s+L9mhEko92P3ypeCyT15fLgcCxx6pfTnvIiGoutkZ0vXFpy0nsa8mtdSk3h359rpD9q7RoSJkeOjKvJZUh508JI9ePItMQTf9maVbJ5bkonzV2zzfFtpRF/i++oxQQxc5AmzuyES1LIlLr6mKVpi/sTsYrn3W79BnT+sB6MQpAGGLO20MO22pr0i7iIbJgTTBTTEGM9YN/QBINXjRxpQwmRfUBDe5pLNM7AIilSVwNGdwD3XUtiwkmJJ3/FodeQxH3+e5G11XjTX2IwntR6C36q/rwOQFOkqcew9D2PVvSOuvYMpqacD/ouVxLAE3PGg/hG7TpEvvzoM7UBQeHuIkbuA0/FllS/wsi0HQT7QDmVdfMt15MLr0Qph35R1Ugfw2/AEuM+d4QlIgchlIRUzd6uSzUetnuBMWVdn49KqwX/BARNfaGyDkunBA3pKkBwfcI+npLtEUCB5Zi/VzNlL69VPReEkJn2hTQV5ys7rDCgsXReK/4Oeol7IbRc/rUVgtopy2eCWIE0gt4EQSPoYO5NoOi/hECYsEqp0TE2yPpR2gxei5KMIx+f87syIhl2aXbkZpZ1bvqH8FjN11QbeQTzNCTHY9tTSc/6yVyW3hRZL67TuNq22+RG6
@@ -152,7 +156,7 @@ window :
      -
        name : COL_etat_com
        identifier : 0x230ca59e0ca2c132
-       internal_properties : BQAAAAUAAAAB+3PJ0Y/YCnH2JXeDuaMnr5/p+5wmXlPtnU28QJ8pTgfAfUb43Wev9lGVMvIQnS8VwSCF15VjWFimEHAtCB1P0Ff+1td6DzHE4e/cyU6Y9B3HiNHAaEZZaarTsGbAnIICswZrpGLGJYhQxRf0EpVSy63WP4/5t0r+cQEqT1eoucyP4fgdOQUR+lRAlNYr05yCqLBMWD1WppqvwlK2fiTUhLNsQa3NbP0=
+       internal_properties : BQAAAAUAAACV71et9Sv8rpVqWQv3lf9zy7vVF+h6ih8p2Qn4DFMdonuk4doceeszauUJliasaauRTawBYynv9MQynPyp/DEjNKvi6ivWExWIJaMgDZrEAHmjNM8kzKI1Neaf7Fr82L7el2KPgE6qCaw0OZtwlgnGXzlqqxN9M8Z6/Z1Ws/MUJVgTfVy5pWn1noh0WJJvF2DGdIR4LGFyQmb7nr7aWsBwINcIJcnpgJE=
        type : 5
        content :
         internal_properties : BQAAAAUAAAAnZuZqta5DodFetjGIJM4YMfpfcVyNpVayANMmZ1OpGHmAIUyDsZcJTc5tW4L1ovxZxFMEP5ROVOWHXh8PkDlJYql2XQtR/n4Tx73jvaO1xvfLTC8NImmxrec//jPVUU5/n6iNt3Y/qk1Den1AcvHhNQ0XdIeFc9UqCPf+qslLve+wXIVf/OB/+6+BPT8C/ZSz5O6qUTWBrtjcnmih33aufHYiJaMjraGg8VvIVYNV0pkVd75/WBDsAGW5TsEvEf1rSKnQoOcayRaYmLK719DtpLr9G1PBnQixWyIyEmL74FZx2ng2HrAHORuF6H5Zq0CvAYzTSfDi3ayJC1vrLmB8SduiDncUMLh2XaWPVuUpHHbxfFvoC+CqBvvLkY0ni7dgAE6gIrBflYv4t69ITdQVkAcHu6zx1vdpTn5arLMRn9q2/T5c8z1KXhPf9J0bTRIVKNLkjIA0GzmQ4nHJMM6nzIPkcg3W7HJE8On9b3rtVvsKpfNNZhZ4J1miZFEh2vU8YPPrIrl+EHClNfOBXtPqL7mGRJrx10M2d9FV2btx3cd+hd9jegU0oP1FKG8wpqnQOkAWoTvdn/j0IqZtDKsIQjFRncO2fz6y5sC7IfuRlmmtSY61kjglhRk1x8XdamKJmEMWw96ddr3byV/m+C/R6saSefvbhHioE7RpwFxQdeSpV/D/d88uJpROA+kUZkoSxbAlXWeByGF0mB2cCw==
@@ -167,7 +171,7 @@ window :
      -
        name : COL_date_com
        identifier : 0x230ca54a0c8875c7
-       internal_properties : BQAAAAUAAACNuR/xyvRqnsthXgh46OV7t+g8weR0ixfMktWj34qCjfB0H+ovFnMIkGR9IOyCLtTjJuTGRx6ktnwyEgFFittTKIasy6ZfASLx3naBcPadFaZcaVr74xmPTJlv08N9jy82/Pq05cxmxktx8PmtIQxxUAM+JYX5NwP6VFzyH+6srJDjqm3YcdCRpTLiZhpaeveCIsajLZWXcFLr6ZcptAhlGE/pGHPFlXEVravNUKMaYDz611xQ3xO6KpT6JjM/OHn3Mtg0GNsvNEnRLJbuqQ==
+       internal_properties : BQAAAAUAAABdiU/BGkT6jttRDjiImDUrhzjs0XQEW8ccgsWTL/qS/QAET/o/5kN4oFQtULyyfgSzdtTWV+705gyigvFV+quDeFbcWzbv0RKBzmbxQOatBbZsmaoLKUWDZJFfz991hxc2lFYwGeQaGGVb6s9PGw53QgU4L3fLIaWKpCwiT968vIDTmn3IQaDh9cJylkoKykdyEjYznWVnQGL7+YfZ5Fg1SH+Z6KOVZUElvbv9gJMqcCzqx2xAL2MKeiQK1uNvCEkn4ggESOs/xNkh/Mbe2Q==
        type : 2
        content :
         internal_properties : BQAAAAUAAABFAcH4NYbYtJKWD42Myv69tMyPI2xnhG87J/3I1RsnJxVHf7IoxzEnaE3SPMsC24z73b77L+3Fz9oqRwSSmFIQXRdzoNLlIj9M7nBJw+tLn5U0v6dOLp2BajMJ2La8U5qUmwgTieHsSp3TDpdzw1X0dvTKYVAaaq8GE85uUkL1dGI7UEKY7Xa+Y5RclDdaxTZCAlIx/kmiPIwJqkiPcpkj3U5ENrHknQJBUvjQW5wKIxZzCvWFBmouoTPNSO4KX0oddtMJtQ6MS1Hd4DLrwMCb0ltqe1CY62Cxfycw3Gox2zlz5XjhetI3O22ww1KIlOIWKnK/sqRm4v4d4yoQI0S4niBnZ8DGK1RteaajYQJc0fJdwTgqYwSYxQypJB4hktOC+uOvDkFicDwiVyWOwV2TsKKgCu1RuZAad5/B2dEn2DOdRdH3weOVplwJlWkPOdYUwtFL6MvP2aNjRWgCiarJoym/Vch4Bal89xJOKBTCHck1L9jTe3aQHC0Dm7Wy527/T7Q2RFpbJet/E/EwIDOf0Du2KIDIZKyLDZ9I4y106oLMkl5ig7RUedeKaJdVTsN/rTnzIEBEvnXB7kg2ZiaukZ/PJyYOgSXRprTqqPflCJZaazM9Q+zECxAKkg38mx2WyR1RQjYGhX77lTDUOviKMrdLGKLsZ0F370Fk7I1aOnObOi7meQJBAH2LS9KWgJPeLb3yGjgNnYGOiYw2obKVtVDqSj6P/kxGKxKfbHQJCYosni8BTtsvoJ4y4OwptOC7TcsxDw608W71kv/5O4MqE+Is7DCFyzxkaBkH7RnaFm6ofzRUHpTUmtyGMQQYZSwXNY6rFcm4mtX1FEuuzHyQ4429EmpaHAiRMWUyl6bffzkIZ6UITGH6/+X94BV9ll52nhp6T+fwapNnzsOCJShGwcxbUGEJLWNnjw==
@@ -332,9 +336,9 @@ window :
       		fWriteLine(nFichierID, LigneAecrire)
       	END
       	
-      	Info("données exporté avec succès")
+      	Info("Données exportées avec succès")
       	// je crée qui une condition qui demande à l'utilisateur si il souhaite ouvrir le fichier exporter
-      	IF YesNo(Yes,"Vous voulez ouvrir le fichier exporter ?") THEN
+      	IF YesNo(Yes,"Voulez-vous ouvrir le fichier exporté ?") THEN
       		ShellExecute(pfichier)
       	END
       	
