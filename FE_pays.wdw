@@ -123,6 +123,11 @@ window :
          IF YesNo(No,"Voulez-vous supprimer ce pays ?") THEN
          	//Si oui alors on efface l'enregistrement de la table tb_pays
          	HDelete(tb_pays)
+         	//En revanche, si un aliment est encore lié à un plat alors un message d'erreur viendra prévenir l'utilisateur qu'il ne peut pas supprimer l'enregistrement actuel
+         	SI HErreurIntégrité() = Vrai ALORS
+         		//Informe l'utilisateur si l'aliment sélectionné est encore relié à un plat
+         		Info("Ce pays est encore relié à un aliment !")
+         	FIN
          	//met l'affichage à jour en fonction de l'état de la table
          	TableDisplay(tb_pays)
          ELSE
