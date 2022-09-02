@@ -351,7 +351,7 @@ window :
      type : 230
      enabled : false
    -
-     code : |1-
+     code : |1+
       //La fenêtre est initialisée
       InitFenêtre(FE_Plats)
       //Vide les champs de Saisie

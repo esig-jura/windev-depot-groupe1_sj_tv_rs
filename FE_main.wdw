@@ -125,6 +125,22 @@ window :
     code_elements :
      type_code : 8
      p_codes : []
+  -
+    name : bt_web
+    identifier : 0x2312080509b353a6
+    internal_properties : BQAAAAUAAACFOOUwoW8ZUkC9mAEo4CM5ckzJSdaOEKdOgJ6WaurfM7A7Kpc/6HTiQU0Maj75FxojsvJcC9cZ3MMHAcT5R6/70DkQTL1iVIDnkxMeCq3oHs9Tq4CaaJUIO7VW4oSV8xH+BSiodG5a6pZL7IEdo7ThMoBrdZqxIVtUmx0S8aLhxXv+fJjN0cy+ewUKvM8wfM496QWI0Cds+p29+eCnAFOmPZxnZJQhI8B/KwXKWvpVvM0i+Z0dYeqVk2/m8m7qGdsWIqb40Ar5fLk4kSscS1JmLhtrSr5KXd6rnjX+KpthCkiJRjp/XG+kvWr/D1CLvZ4h7zN4AuTIL6VZkG8+NoY8rVZI5dxrU1acS6nacisFJuMThzsVPj4FNapAEFCsRrvjNcKiffJ400kb/SrRuzvMPr03OtttAu3WE2yU8WU/7bD0xeKoG3QBTrn3hdjCpId+gN7nQCjJWEC4uuD8ZgHNuWgd7vhEAHPmgd6xdnVHZoND6KR9RlmXHsN609lIvDWQlfniL9Gto+0IpWJ1SZqwHjzNt+tV+5u1HhdnL9FBB52zlvLcdpM74jFIrBaUAANMMLn2r50qPCL60cyUNO/+XG3taT/DmYwxdWAzDZ2uS92t/X0efBftJNtAs2cxOv7apxW1LZ186Qk2v5ZbhhI/PypJZbOCgRG2LwA9zx8lK8stPc6mwEtlJ+MgMS+D4xtS5ZssBjegJm0EP/Ez75cL9jM039qEWR+siVdA
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         //Redirige l'utilisateur sur la page web de connexion
+         NavigateurLanceAppli("https://lmo.divtec.me/pi02gr1/")
+        type : 18
+      -
+        type : 161
+        enabled : false
  menu :
   name : _Menu
   identifier : 0x292573e513b5f221

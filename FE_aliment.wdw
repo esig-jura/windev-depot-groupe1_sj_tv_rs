@@ -147,10 +147,20 @@ window :
      p_codes :
       -
         code : |1+
+         
+         
+        type : 14
+      -
+        code : |1-
          //Boîte de dialogue qui demande à l'utilisateur si celui-ci désire effacer l'enregistrement sélectionné 
          IF YesNo(No,"Voulez-vous supprimer cet aliment ?") THEN
          	//Si oui alors on efface l'enregistrement de la table tb_aliment
          	HDelete(tb_aliment)
+         	//En revanche, si un aliment est encore lié à un plat alors un message d'erreur viendra prévenir l'utilisateur qu'il ne peut pas supprimer l'enregistrement actuel
+         		si HErreurIntégrité() = VRAI ALORS
+         			//Informe l'utilisateur si l'aliment sélectionné est encore relié à un plat
+         			Info("Cet aliment est encore relié à un plat !")
+         		FIN
          	//met l'affichage à jour en fonction de l'état de la table
          	TableDisplay(tb_aliment)
          ELSE
@@ -357,6 +367,12 @@ resources :
  string_res :
   identifier : 0x13032b85000c3f79
   internal_properties : BQAAAAUAAAAa2Zm8J9E/zh+/WIrVvz1fER/So3PB0gjQuxc1xKQVWY4ZDm5lfg==
+  strings :
+   -
+     text :
+      fr-FR : Cette référence produit est inconnue.
+      en-GB : This product reference is unknown.
+     index : 0
 custom_note :
  internal_properties : BQAAAAUAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
 rad :
