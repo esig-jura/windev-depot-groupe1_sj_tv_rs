@@ -50,16 +50,12 @@ if (isset($_POST['inscription'])) {
         // Choix du mode de récuperation
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
-        // Récupère le nombre d'enregistrement affectés par la requête
-        $res = $stmt->rowCount();
-
     } catch (PDOException $e) {
         die($e->getMessage());
     }
     
-    // Redirection sur la page de connexion
+    // Redirection sur la page de commande
     header('Location : '.'../commande.php');
-
 
 } elseif (isset($_POST['connexion'])){
 
@@ -135,7 +131,7 @@ if (isset($_POST['inscription'])) {
         // Suppression du prix total du plat du tableau
         unset($_GET['input-prix-total-plat']);
 
-        // Création de la requete d'insertion dans la tabke associative contenir
+        // Création de la requete d'insertion dans la table associative contenir
         // Parcours de GET
         foreach ($_GET as $plat) {
 
@@ -151,7 +147,7 @@ if (isset($_POST['inscription'])) {
                 continue;
             }
 
-            // Vérifie si la quautité est égal à 0
+            // Vérifie si la quantité est égal à 0
             if ($qte_plat ==0){
                 $id_plat = -1;
                 $qte_plat = -1;

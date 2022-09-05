@@ -1,7 +1,7 @@
 <?php
 
 // Page de connexion et d'inscription
-// But : Permet à l'utilisateur créé un compte ou de se connecter
+// But : Permet à l'utilisateur créer un compte ou de se connecter
 // Créé par : Shannon, Reda et Théo
 // Date : 05.09.2022
 
@@ -105,10 +105,12 @@ $stmt->setFetchMode(PDO::FETCH_NUM);
             <libellé>NPA</libellé>
             <?php
 
+            // Récupération du NPA et du nom de la localité
             $stmt = $dbh->prepare($sql);
             $stmt->execute();
             $stmt->setFetchMode(PDO::FETCH_NUM);
 
+            // Affichage du NPA et du nom de la localité
             try {
                 foreach ($stmt as $row) {
                     echo'<option value="'.$row[0].'">'.$row[1].' '.$row[2].'</option>';
@@ -127,7 +129,7 @@ $stmt->setFetchMode(PDO::FETCH_NUM);
 </html>
 <script>
 
-    // Récupération pour les transitions entre le formulaire de connexion et d inscription
+    // Constantes pour les transitions entre le formulaire de connexion et d inscription
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
     const container = document.getElementById('container');
