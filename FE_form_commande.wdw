@@ -98,7 +98,7 @@ window :
      p_codes :
       -
         code : |1+
-         // je met une condition si l'utilisateur oublier de remplir les champs de  saisie 
+         // je met une condition si l'utilisateur oublie de remplir les champs de  saisie 
          IF  (Cs_date_com="" AND Cb_users=0) OR (Cs_qte_cont=0 AND Cb_plat=0) THEN
          Error("Veuillez remplir tous les champs !")
          RETOUR
@@ -262,13 +262,13 @@ window :
          
          si resultat=-1 ALORS
          	si Cs_qte_cont<1 ALORS
-         		Erreur("erreur sur le champ quantité ")
+         		Erreur("La quantité ne peut pas être inférieure à 1 ")
          	sinon
          	TableAjouteLigne(Table_tb_contenir,Cb_plat,Cb_plat.ValeurAffichée,Cs_qte_cont)	
          	FIN
          	
          SINON
-         	Erreur("vous pouvez pas ajouter les même plat")
+         	Erreur("Vous ne pouvez pas ajouter le même plat")
          FIN
          
          

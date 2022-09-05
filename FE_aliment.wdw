@@ -303,7 +303,7 @@ window :
       -
         code : |1+
          //Active un filtre "commence par" sur la colonne COL_alim en fonction de ce que l'utilisateur tape dans le champ de saisie aliment (CS_rech_alim)
-         TableActiveFiltre(COL_alim,filtreCommencePar,CS_rech_alim)
+         TableActiveFiltre(COL_alim,filtreContient,CS_rech_alim)
         type : 17
  menu :
   name : _Menu
