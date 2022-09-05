@@ -184,8 +184,11 @@ window :
          IF YesNo(No,"Voulez-vous supprimer cet utilisateur ?") THEN
          	//Si oui alors on efface l'enregistrement de la table tb_utilisateur
          	HDelete(tb_utilisateur)
-         	//met l'affichage à jour en fonction de l'état de la table
-         	TableDisplay(tb_utilisateur)
+         	//En revanche, si un aliment est encore lié à un plat alors un message d'erreur viendra prévenir l'utilisateur qu'il ne peut pas supprimer l'enregistrement actuel
+         	SI HErreurIntégrité() = Vrai ALORS
+         		//Informe l'utilisateur si l'aliment sélectionné est encore relié à un plat
+         		Info("Cet utilisateur est encore relié à au moins une commande !")
+         	FIn
          ELSE
          	//Si non,  une fenêtre informe l'utilisateur que la suppression a été abandonnée
          	Info("Suppression abandonnée")	
@@ -282,7 +285,7 @@ window :
     internal_properties : BQAAAAUAAACimNqkLyuUvrzBtIXPJ41b+JFknMkTLPkG9ZvducZ9YnRnuxuNB/L4OGnqifUDHcsyntht+Gc2AdShHCqVu+u5bk2g8hFkiixd6jTV/i8eEowiYoIbN6+rSOu8aga2w8w1n1RxHCZjtSABibfHzoIWpcU6Efv2/IiBeywAGaqEg6XeCS2STTwrzXVSPLooj3ipCQGslOL3gbsy3TE0p9ujB2GeScfjkWnu5UgwtYZvShAKazH6wsDzBvLG4QbKiLOJQQxhdfiRqjbnIfeX/bVXKpXpFYosgLPJThW5mx8aKWQwKofvNtLe90lCJhkT1Fjk4w13AxkWcfx5JeE1+9ithVx4hC17lIhTbF9nB32mPEcWB/qONTdZMspDZii+ctKYVNubqOZgvYJ1sfkN3fXEJQPMvpDXMprB5OlLAZ44xq6h3CSJIx6V+1Ch8Ow8FLH1H0pPgfMlbTY8YB0L8C7vaLvHv5I4VBay+J67mrbuPWYHWepecs78HbZvTgWAZ8U/nCl58Dd1e/GHeeR45fo/Yzooa8r3CeX6qvKG/xkKHdFeG3qrHDSZ1KYqnGdD9CRbR6B92PpOqrZaXTEt2dgSWMOnXyt8k6PiNqsyVrjSChAV5+tUQxUJvMTjHcqz3h0EjnFrRo04pAs/R30pSxazUkO9WNeVdlEnhwKSaUkmzWn2iSR9AWtr7sZMVYv0QzbYzzn1xsDaYDPaUPxPWNeKv6za8QwNqXEQeUvwFP0+sxrylctR8RseDNGRLC/Scyytyk7hJAamxxKuK2vILvF/KYttxH7Cr4LEDW89WLiY/ECvG0Uo9OW+UkGk0c4V9n+bwtQGRjQqjShBBrV6Dcg4Jl2E97pssppAYVRyk+pATFvtW+cG8Xe0ZpqEPkhZ+KIAraE=
     options :
      -
-       internal_properties : BQAAAAUAAABktQl8JxN5yQmCOUri3wAR1O+ZzPgVU1rdBkLLG64CTnBdJx8U/1WDz5gvoT3w4ImuP45OxjPRVkPEFWVmG2/x99JnSa05Ob26NzExjTBpNNsfKHUwMQCWYUPOPX6hBkKn5yBujMamhP9HMOUu9NGJXU/t1yM=
+       internal_properties : BQAAAAUAAAA8fVBcLaWVjiwOuaQwf9hpvp/DLCaj55A/pt5VufZKhhpFYXdmSfXxPQwLpwcQ+Fn8m6AevFlFmNHIfhY9FqoojOmmnjAcNr5zIObmGIeQT+Sur77HOAmffqCrnp2MJYVomnPz36kTaZhA3RbAJR4CNGDFj3s=
     type : 5
     controls : []
     code_elements :

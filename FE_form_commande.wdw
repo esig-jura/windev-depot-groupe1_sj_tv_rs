@@ -121,7 +121,7 @@ window :
          	
          FIN
          	
-         Info("ajout terminer")
+         Info("ajout terminé")
          
          Close()
          
