@@ -6,6 +6,7 @@ REQ_composer_sql.WDR
 REQ_cont_alim.WDR
 FE_localite.wdw
 GABARITS\WD\250 PHOENIX\PHOENIX_CBOX_TABLE.PNG
+GABARITS\WD\250 PHOENIX\PHOENIX_EDT.PNG
 GABARITS\WD\250 PHOENIX\PHOENIX_ROLLOVER.PNG
 GABARITS\WD\250 PHOENIX\PHOENIX_SCROLL_H.PNG
 GABARITS\WD\250 PHOENIX\PHOENIX_SCROLL_V.PNG
@@ -14,7 +15,6 @@ GABARITS\WD\250 PHOENIX\PHOENIX_TABLE_COLPICT.PNG
 GABARITS\WD\250 PHOENIX\PHOENIX_TABLE_COLTITLE.PNG
 REQ_categorie.WDR
 FE_pays.wdw
-GABARITS\WD\250 PHOENIX\PHOENIX_EDT.PNG
 FE_aliment.wdw
 FE_commande.wdw
 FE_form_util.wdw
@@ -43,12 +43,16 @@ FE_form_commande.wdw
 FLS01043.PNG
 GABARITS\WD\250 PHOENIX\PHOENIX_BTN_MEDIA_CENTER.PNG
 Requête_afficheplat.WDR
-Requête_etat_commande.WDR
+Requête_état_commande.WDR
 REQ_affiche_alim_ajout.WDR
 REQ_affiche_alim_bio.WDR
 REQ_affiche_alim_plat.WDR
 REQ_affiche_bio.WDR
 Req_delete_contenir.WDR
+REQ_supprimer_commande.WDR
+REQ_delete_plat.WDR
+Requête_delete_plat_cont.WDR
+Etat_cmd2.wde
 PastaDrive.wdy
 Gabarits\WD\250 Phoenix\Phoenix.wdy
 Gabarits\WD\250 Phoenix\PHOENIX_BG_SHEET.PNG
