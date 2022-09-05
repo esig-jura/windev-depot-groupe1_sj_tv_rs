@@ -256,11 +256,13 @@ window :
          
          //J'affecte à la variable ResSelect le numéro de la ligne sélectionnée
          ResSelect est un entier= TableSelect(tb_ajout_aliment)
-         //J'exécute la requête REQ_composer qui permet de sélectionner l'id (id_comp) de la table tb_composer en fonction de l'id du plat (fk_comp_plat) et de l'id de l'aliment (fk_comp_alim)
+         //J'exécute la requête REQ_composer qui permet de sélectionner l'id (id_comp) de la table tb_composer
+         //en fonction de l'id du plat (fk_comp_plat) et de l'id de l'aliment (fk_comp_alim)
          HExécuteRequête(REQ_composer,hRequêteDéfaut,tb_plat.id_plat,tb_ajout_aliment.nom_alim[ResSelect])
          //Positionne sur l'id que la requête REQ_composer a retourné
          HLitPremier(REQ_composer)
-         //Positionne sur la table composer (tb_composer) où l'id (id_comp de tb_composer) est égal à l'id obtenu par la requête (REQ_composer)
+         //Positionne sur la table composer (tb_composer) où l'id (id_comp de tb_composer)
+         //est égal à l'id obtenu par la requête (REQ_composer)
          HReadSeekFirst(tb_composer,id_comp,REQ_composer.id_comp)
          //Supprime l'aliment de la table
          HSupprime(tb_composer)
