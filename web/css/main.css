@@ -1,3 +1,9 @@
+/*  CSS pour la page de commande
+*   Par Shannon, Reda et Théo
+*   Le 05.09.2022
+*/
+
+/* Importation de la famille police */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 header {
@@ -142,6 +148,7 @@ body > form > div > div {
     max-width: 420px;
 }
 
+/* Ecran de maximum 1700px */
 @media only screen and (max-width: 1700px) {
     /* DIV du plat */
     .container, div.prix-total {
@@ -154,6 +161,7 @@ body > form > div > div {
 
 }
 
+/* Ecran de maximum 1500px */
 @media only screen and (max-width: 1500px) {
 
     .titre h2 {
@@ -161,6 +169,7 @@ body > form > div > div {
     }
 }
 
+/* Ecran de maximum 1300px */
 @media only screen and (max-width: 1300px) {
     /* DIV du plat */
     .container, div.prix-total {
@@ -171,10 +180,9 @@ body > form > div > div {
         margin : 0 0 50px 50px;
         float: left;
     }
-
-
 }
 
+/* Ecran de maximum 1200px */
 @media only screen and (max-width: 1200px) {
     /* Image du plat */
     .plat {
@@ -190,6 +198,7 @@ body > form > div > div {
     }
 }
 
+/* Ecran de maximum 1000px */
 @media only screen and (max-width: 1000px) {
     /* DIV du plat */
     .container {
@@ -202,6 +211,7 @@ body > form > div > div {
     .plat {
         max-width: 350px;
     }
+
     body > div > div:nth-child(2) {
         width: 50%;
     }
@@ -228,6 +238,7 @@ body > form > div > div {
 
 }
 
+/* Ecran de maximum 870px */
 @media only screen and (max-width: 870px) {
     .plat {
         max-width: 250px;
@@ -235,9 +246,8 @@ body > form > div > div {
     }
 }
 
+/* Ecran de maximum 700px */
 @media only screen and (max-width: 700px) {
-
-    .plat-to
 
     .plat {
         max-width: 100%;
@@ -283,6 +293,7 @@ body > form > div > div {
 
 }
 
+/* Ecran de maximum 360px */
 @media only screen and (max-width: 360px) {
 
     .quantite {

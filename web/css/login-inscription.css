@@ -1,4 +1,7 @@
-
+/*  CSS pour la page de connexion/inscription
+*   Par Shannon, Reda et Théo
+*   Le 05.09.2022
+*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
@@ -272,6 +275,7 @@ div.form-responsive {
     display: none;
 }
 
+/* Ecran de maximum 1000px */
 @media only screen and (max-width: 1000px) {
     div.container {
         border-radius: 0;
@@ -280,6 +284,7 @@ div.form-responsive {
     }
 }
 
+/* Ecran de maximum 750px */
 @media only screen and (max-width: 750px) {
 
     div.form-responsive {
