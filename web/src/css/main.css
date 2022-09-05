@@ -1,0 +1,303 @@
+/*  CSS pour la page de commande
+*   Par Shannon, Reda et Théo
+*   Le 05.09.2022
+*/
+
+/* Importation de la famille police */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+header {
+    background-color: #3b7302;
+    height: 70px;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+
+ 
+}
+/* DIV du plat */
+.container {
+    display: flex;
+    flex-direction : row;
+    justify-content : space-between;
+    margin : 50px 250px 50px 250px;
+    border-bottom: solid 7px #a60303;
+}
+
+div.prix-total{
+    display: flex;
+    flex-direction : row;
+    margin : 50px 250px 50px 250px;
+    gap: 0.5em;
+
+}
+
+div.prix-total span, div.prix-total span {
+    line-height: 30px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* DIV titre du plat et badges */
+.titre {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Titre du plat */
+.titre h2 {
+    display: flex;
+    flex-direction: row;
+    line-height: 50px;
+    margin: 0;
+}
+/* DIV prix, quantité et prix total */
+.prix-badge {
+    margin-left: 50px;
+    display: flex;
+    flex-direction : column;
+}
+
+/* Image du plat */
+.plat {
+    max-width: 400px;
+    max-height: 400px;
+    margin-right: 50px;
+
+}
+
+/* Image badges */
+.badge {
+    vertical-align: top;
+    max-height: 50px;
+    margin-left: 0.5em;
+
+}
+
+/* DIV prix et prix total */
+.prix, .prix-plat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
+/* DIV prix total */
+.prix-plat {
+    margin-top: 100%;
+}
+
+/* DIV prix */
+.prix {
+    color: #3b7302;
+}
+
+/* Texte prix */
+.prix p {
+    font-size: x-large;
+}
+
+footer {
+    text-align:center;
+    bottom:0;
+    width:100%;
+    display:inline-block;
+    vertical-align:top;
+}
+
+footer img {
+    max-width: 250px;
+}
+
+button {
+    margin : 0 250px 50px 0;
+    border-radius: 3px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    float:right;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+}
+
+body > form > div > div {
+    max-width: 420px;
+}
+
+/* Ecran de maximum 1700px */
+@media only screen and (max-width: 1700px) {
+    /* DIV du plat */
+    .container, div.prix-total {
+        margin : 50px 150px 50px 150px;
+    }
+
+    button {
+        margin : 0 150px 50px 0;
+    }
+
+}
+
+/* Ecran de maximum 1500px */
+@media only screen and (max-width: 1500px) {
+
+    .titre h2 {
+        line-height: 25px;
+    }
+}
+
+/* Ecran de maximum 1300px */
+@media only screen and (max-width: 1300px) {
+    /* DIV du plat */
+    .container, div.prix-total {
+        margin : 50px 50px 50px 50px;
+    }
+
+    button {
+        margin : 0 0 50px 50px;
+        float: left;
+    }
+}
+
+/* Ecran de maximum 1200px */
+@media only screen and (max-width: 1200px) {
+    /* Image du plat */
+    .plat {
+        max-width: 350px;
+        max-height: 350px;
+        margin-right: 30px;
+
+    }
+
+    /* DIV prix, quantité et prix total */
+    .prix-badge {
+        margin-left: 30px;
+    }
+}
+
+/* Ecran de maximum 1000px */
+@media only screen and (max-width: 1000px) {
+    /* DIV du plat */
+    .container {
+        flex-direction : row;
+        flex-wrap: wrap;
+        justify-content : flex-start;
+
+    }
+
+    .plat {
+        max-width: 350px;
+    }
+
+    body > div > div:nth-child(2) {
+        width: 50%;
+    }
+
+    /* DIV prix, quantité et prix total */
+    .prix-badge {
+        margin-left: 0;
+        flex-direction : row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .quantite {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5em;
+    }
+
+    /* DIV prix et prix total */
+    .prix, .prix-plat {
+        margin: 0;
+    }
+
+}
+
+/* Ecran de maximum 870px */
+@media only screen and (max-width: 870px) {
+    .plat {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+/* Ecran de maximum 700px */
+@media only screen and (max-width: 700px) {
+
+    .plat {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .titre {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    body > div > div:nth-child(2) {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .titre > h2:nth-child(1) {
+        width: 100%;
+    }
+
+    img.badge:nth-child(2), img.badge:nth-child(3) {
+        margin : 20px 0 18px 0;
+    }
+
+    .container > div:nth-child(2) > h3:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .prix-badge {
+        flex-direction : column;
+    }
+
+    .prix-badge h3,.prix > p:nth-child(2) {
+        margin: 0;
+    }
+
+    .prix {
+        margin: 10px 0 20px 0;
+    }
+
+    .quantite label, .quantite input {
+        margin-bottom: 7px;
+    }
+
+}
+
+/* Ecran de maximum 360px */
+@media only screen and (max-width: 360px) {
+
+    .quantite {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
